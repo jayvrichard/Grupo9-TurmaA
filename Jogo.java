@@ -4,10 +4,10 @@ import java.util.Collections;
 import java.util.ArrayList;
 
 class Jogo {
-	private static final String nome_aventureiro = null; ////Precisa verificar o porque não consigo colocar o nome do aventureiro nos dialogos
+	private static final String nome_aventureiro = " "; ////Precisa verificar o porque não consigo colocar o nome do aventureiro nos dialogos
 	
      ////static int temp_dialog = 60, temp_narrativa = 130, temp_transicao = 20;   //Tempo correto do game
-	static int temp_dialog = 20, temp_narrativa = 80, temp_transicao = 20; // Para rodar o jogo sem o delay nas
+	static int temp_dialog = 0, temp_narrativa = 0, temp_transicao = 0; // Para rodar o jogo sem o delay nas
 																			// mensagens, pode mudar o valor destas 3
 																			// variáveis para 0;
 	public static void main(String[] args) throws Exception {
@@ -128,7 +128,7 @@ class Jogo {
 				
 				capitulo_1();
 				capitulo_2();
-				//capitulo_3();
+				capitulo_3();
 
 			} else if (escolha_menu == 3) {
 				menu();
@@ -136,7 +136,7 @@ class Jogo {
 				Digita("\n\n CAPÍTULO I - A terrível maldição", TimeUnit.MILLISECONDS, temp_dialog);
 				capitulo_1();
 				capitulo_2();
-				//capitulo_3();
+				capitulo_3();
 
 			} else {
 				System.out.println("\n Opção inválida!");
@@ -158,33 +158,30 @@ class Jogo {
 		Digita("\n\n - Mestre dos magos: Grannus, preciso de sua ajuda para levar essas pessoas para um local seguro, EU VOU ENFRENTAR MEU IRMÃO E ACABAR COM ISSO DE UMA VEZ POR TODAS! \n\n - Aprendiz: Entendido mestre, assim que eu conseguir levar todos em segurança volto para te ajudar! [...] Por aqui crianças, vou levá-las para um lugar seguro!", TimeUnit.MILLISECONDS, temp_dialog);
 		
 		Digita("\n\n - Centrion: Eu precisava de algo para chamar sua atenção! Eu tinha que ter certeza de que você estaria aqui irmão. \n\n - Mestre dos magos: O que você pretende fazer com tudo isso ?\n\n - Centrion: Eu quero tirar de você o que me pertence!!", TimeUnit.MILLISECONDS, temp_dialog);
-	
+		
+		do {
 			
-		Digita("\n\n - Mestre dos magos:  1) Isso é o que veremos! ou 2) Você não é páreo para mim!", TimeUnit.MILLISECONDS, temp_dialog);
-		
-		System.out.println("\n");
-		resp = entrada.nextInt();
-		
-		
+			Digita("\n\n - Mestre dos magos:  1) Isso é o que veremos! ou 2) Você não é páreo para mim!", TimeUnit.MILLISECONDS, temp_dialog);
+			System.out.println("\n");
+			resp = entrada.nextInt();
+			
 		if (resp == 1) {
 			Digita("\n - Mestre dos magos: Isso é o que veremos!", TimeUnit.MILLISECONDS, temp_dialog);
 			Digita("\n\n “Então, uma batalha intensa é travada entre dois magos poderosos e no meio dos destroços uma criança sozinha e indefesa é vista tentando se esconder para não ser atingida… O Aprendiz volta para tentar ajudar seu mestre.”", TimeUnit.MILLISECONDS, temp_dialog);
-
+break;
 			
 		} else if (resp == 2) {
 			
 			Digita("\n - Mestre dos magos: Você não é páreo para mim!", TimeUnit.MILLISECONDS, temp_dialog);
 			Digita("\n\n “Então, uma batalha intensa é travada entre dois magos poderosos e no meio dos destroços uma criança sozinha e indefesa é vista tentando se esconder para não ser atingida… O Aprendiz volta para tentar ajudar seu mestre.”", TimeUnit.MILLISECONDS, temp_dialog);
-
-            System.out.println("");
-          
+break;
             
 		} else {
 			System.out.println("Você não digitou uma resposta valída!");
 			
 		}
 		
-		
+		}while(resp != 1 || resp != 2);
 		Digita("\n\n- Mestre dos magos: GRANNUS leve essa criança daqui!! Eu vou terminar essa luta sozinho! \n  CENTRIONNNNN!! Eu devia ter acabado com você no passado, mas não tem problema eu acabo com você agora!", TimeUnit.MILLISECONDS, temp_dialog);
 		Digita("\n\n - Aprendiz: Mestre, lembra daquele feitiço que você me ensinou?", TimeUnit.MILLISECONDS, temp_dialog);
 		Digita("\n\n - Mestre dos magos: Você tem certeza que isso vai funcionar? \n Irei confiar nos seus sentidos, meu jovem aprendiz! \n TENEBRISSS MORTIS!!", TimeUnit.MILLISECONDS, temp_dialog);
@@ -209,7 +206,7 @@ class Jogo {
 		
 		Digita("\n\n - Solveig: " + nome_aventureiro + " preciso lhe ensinar os conhecimentos que nosso pai tinha, para que um dia você possa se defender sozinho, você entende isso ?", TimeUnit.MILLISECONDS, temp_dialog);
 		
-		Digita("\n\n - " + nome_aventureiro + "1) Eu quero proteger nossa vila do homem que matou nosso Pai!! ou 2) Eu não sei se conseguirei ser bom como você meu irmão", TimeUnit.MILLISECONDS, temp_dialog);
+		Digita("\n\n - " + nome_aventureiro + " 1) Eu quero proteger nossa vila do homem que matou nosso Pai!! ou 2) Eu não sei se conseguirei ser bom como você meu irmão", TimeUnit.MILLISECONDS, temp_dialog);
 		
 	
 
@@ -252,20 +249,142 @@ class Jogo {
 		
 		
 		Digita("\n\n Ao completar 17 anos, Bryanna começa a receber sinais de que seu tempo de vida está acabando. Seu meio irmão " + nome_aventureiro + " percebe esses acontecimentos e conta para seu irmão mais velho. \n Solveig desesperado para salvar sua irmã busca soluções em livros antigos de seu pai para que talvez encontre algo que possa ajudá-los enquanto o jogador vai em busca da cura que está com Grannus.", TimeUnit.MILLISECONDS, temp_dialog);
-		
-		Digita("\n\n Precisa desenvolver o resto da historia, fiz apenas o MENU! by: João Vitor", TimeUnit.MILLISECONDS, temp_dialog);
-		
+		Digita("\n\n ========================== ",  TimeUnit.MILLISECONDS, temp_dialog);
+		System.err.println("=======");
+		capitulo_3();
 	}
 	
 	
 //================================================================ CAPITULO 3 ==============================================================================================================================
-	//static void capitulo_3() throws Exception {
+	static void capitulo_3() throws Exception {
 
-		//Scanner entrada = new Scanner(System.in);
+		Scanner entrada = new Scanner(System.in);
 		
-		//Digita("\n\n Precisa desenvolver o resto da historia, fiz apenas o MENU! by: João Vitor", TimeUnit.MILLISECONDS, temp_dialog);
+		Digita("\n\n  CAPÍTULO FINAL - O segredo é revelado", TimeUnit.MILLISECONDS, temp_dialog);
+		Digita("\n\n - Doodou: Acorde garoto, precisamos seguir em frente! Vamos descobrir como salvar sua irmã e acabar com tudo isso.",  TimeUnit.MILLISECONDS, temp_dialog);
 		
-	//}
+		int resp;
+		do {
+			Digita("\n\n - " + nome_aventureiro + " 1} Vamos, estou pronto! 2} Esperaaaaa, eu estou cansado!", TimeUnit.MILLISECONDS, temp_dialog);
+			
+			
+			System.out.println("\n");
+			resp = entrada.nextInt();
+			
+			if(resp == 1) {
+				Digita("\n - " + nome_aventureiro + " Vamos estou pronto!", TimeUnit.MILLISECONDS, temp_dialog);
+				break;
+			}else if(resp == 2) {
+				Digita("\n - " + nome_aventureiro + " Esperaaaaa, eu estou cansado!", TimeUnit.MILLISECONDS, temp_dialog);
+			    break;
+			}else {
+				System.out.println("Você não digitou uma resposta valída!");
+			}
+		} while(resp != 1 || resp != 2);
+		
+		if(resp == 1) {
+			Digita("\n\n - Doodou: Vamos ter que entrar por trás para ele não ver a gente.", TimeUnit.MILLISECONDS, temp_dialog);
+		}else if(resp == 2) {
+			Digita("\n\n - Doodou: Essa pílula que eu te dei não te fez muito bem, vamos acorde!", TimeUnit.MILLISECONDS, temp_dialog);
+		}
+		
+		Digita("\n\n - " + nome_aventureiro + " Certo vamos andando!", TimeUnit.MILLISECONDS, temp_dialog);
+		Digita("\n\n  Doodou: Que estranho não há guardas e não vejo ninguém.",  TimeUnit.MILLISECONDS, temp_dialog);
+		
+		int resp1;
+		do {
+			Digita("\n\n - " + nome_aventureiro + " 1} Ele deve ser muito convencido mesmo. 2} Isso pode ser uma armadilha!", TimeUnit.MILLISECONDS, temp_dialog);
+			
+			System.out.println("\n");
+		    resp1 = entrada.nextInt();
+			
+			if(resp1 == 1) {
+				Digita("\n - " + nome_aventureiro + " Ele deve ser muito convencido mesmo.", TimeUnit.MILLISECONDS, temp_dialog);
+				break;
+			}else if(resp1 == 2) {
+				Digita("\n - " + nome_aventureiro + " Isso pode ser uma armadilha!", TimeUnit.MILLISECONDS, temp_dialog);
+				break;
+			}else {
+				System.err.println("Você não digitou uma resposta valída!");
+			}
+		} while(resp1 != 1 || resp1 != 2);
+		
+		
+		Digita("\n\n  Doodou: Você pode estar certo! Tenha cuidado!",  TimeUnit.MILLISECONDS, temp_dialog);
+		Digita("\n\n - " + nome_aventureiro + " Eu acho que estou vendo a entrada, vamos!", TimeUnit.MILLISECONDS, temp_dialog);
+		Digita("\n\n  Doodou: Ei " + nome_aventureiro + " espereee!! […] Ah droga isso não é nada bom!",  TimeUnit.MILLISECONDS, temp_dialog);
+		Digita("\n\n - " + nome_aventureiro + " EU FINALMENTE ENCONTREI VOCÊ!!", TimeUnit.MILLISECONDS, temp_dialog);
+		Digita("\n\n SINTA A FÚRIA DA MINHA ESPADA!!", TimeUnit.MILLISECONDS, temp_dialog);
+		Digita("\n\n  Grannus: Mas o que…!!",  TimeUnit.MILLISECONDS, temp_dialog);
+		Digita("\n\n Você tem muita coragem criança!", TimeUnit.MILLISECONDS, temp_dialog);
+		Digita("\n\n  Doodou: " + nome_aventureiro + " não ataque sem uma estratégia, não se esqueça com que estamos lidando!",  TimeUnit.MILLISECONDS, temp_dialog);
+		Digita("\n\n Eles se entreolharam. O " + nome_aventureiro + " estava carregado de lembranças, de uma luta que ficou no passado, mas ainda marcava o presente. \r\n"
+				+ "A intensa magia de Grannus fazia com que eles não se enxergassem muito bem, visto que estavam a uma distância considerável. \r\n"
+				+ "Estava um de frente com o outro, até que Grannus resolveu se pronunciar: ", TimeUnit.MILLISECONDS, temp_dialog);
+		Digita("\n\n  Grannus: Eu sabia que vocês viriam atrás de mim! mas para que? para morrer igual seu pai miserável? Se veio me matar, vai precisar muito mais que uma espada e um duende hahahahaha",  TimeUnit.MILLISECONDS, temp_dialog);
+		Digita("\n\n - " + nome_aventureiro + " 1} Você foi um covarde matando meu pai enquanto ele estava fraco! 2} Você vai pagar por tudo que fez cretino!", TimeUnit.MILLISECONDS, temp_dialog);
+		
+		System.out.println("\n");
+		int resp2 = entrada.nextInt();
+		
+		if(resp2 == 1) {
+			Digita("\n\n - " + nome_aventureiro + " Você foi um covarde matando meu pai enquanto ele estava fraco!", TimeUnit.MILLISECONDS, temp_dialog);
+		}else if(resp2 == 2) {
+			Digita("\n\n - " + nome_aventureiro + " Você vai pagar por tudo que fez cretino!", TimeUnit.MILLISECONDS, temp_dialog);
+		}
+		
+		Digita("\n\n  Grannus: Você é aquela criança ? Ah sim eu devo estar certo, eu lembro de você naquele dia!",  TimeUnit.MILLISECONDS, temp_dialog);
+		Digita("\n\n  No dia em que eu salvei a sua vida e o levei para casa em segurança! Eu cuidei de você enquanto seu pai não podia nem levantar da cama, de você e dos seus irmãos, fracos!",  TimeUnit.MILLISECONDS, temp_dialog);
+		Digita("\n\n - " + nome_aventureiro + " 1}  Então se lembra de mim sabe porque eu estou aqui! 2} Eu vim acabar com a maldição que você jogou na minha irmã!", TimeUnit.MILLISECONDS, temp_dialog);
+		
+		System.out.println("\n");
+		int resp3 = entrada.nextInt();
+		
+		if(resp3 == 1) {
+			Digita("\n\n - " + nome_aventureiro + " Então se lembra de mim sabe porque eu estou aqui!", TimeUnit.MILLISECONDS, temp_dialog);
+		}else if(resp3 == 2) {
+			Digita("\n\n - " + nome_aventureiro + " Eu vim acabar com a maldição que você jogou na minha irmã!", TimeUnit.MILLISECONDS, temp_dialog);
+		}
+		 
+		Digita("\n\n  Grannus: HAHAHA você o que vai precisar fazer para conseguir isso não sabe?",  TimeUnit.MILLISECONDS, temp_dialog);
+		Digita("\n\n  Grannus ainda levado pelo feitiço lançado sobre ele, olha com desprezo e ódio para o jovem " + nome_aventureiro + " enquanto Doodou busca uma estratégia para derrotar o Grannus.",  TimeUnit.MILLISECONDS, temp_dialog);
+		Digita("\n\n - " + nome_aventureiro + " 1}  Eu vou vencê-lo custe o que custar! 2} Doodou o que vamos fazer?", TimeUnit.MILLISECONDS, temp_dialog);
+		
+		System.out.println("\n");
+		int resp4 = entrada.nextInt();
+		
+		if(resp4 == 1) {
+			Digita("\n\n - " + nome_aventureiro + " Eu vou vencê-lo custe o que custar!", TimeUnit.MILLISECONDS, temp_dialog);
+		}else if(resp4 == 2) {
+			Digita("\n\n - " + nome_aventureiro + " Doodou o que vamos fazer?", TimeUnit.MILLISECONDS, temp_dialog);
+		}
+		
+		Digita("\n\n  Doodou: Aqui pegue isso e jogue na frente dele!!",  TimeUnit.MILLISECONDS, temp_dialog);
+		Digita("\n\n - " + nome_aventureiro + " Certo! AAAARRRGG TOME ISSO!!", TimeUnit.MILLISECONDS, temp_dialog);
+		Digita("\n\n  Doodou: Muito bem " + nome_aventureiro + "!! Use sua espada agora!!",  TimeUnit.MILLISECONDS, temp_dialog);
+		
+		int resp5;
+		do {
+			Digita("\n\n - " + nome_aventureiro + " 1}  Atacar com a espada. 2} Esperar o ataque de Grannus.", TimeUnit.MILLISECONDS, temp_dialog);
+			
+			System.out.println("\n");
+			resp5 = entrada.nextInt();
+			
+			if(resp5 == 1) {
+				Digita("\n\n - " + nome_aventureiro + " AAAAHHH SEGURA ESSA!!", TimeUnit.MILLISECONDS, temp_dialog);
+				Digita("\n\n Espera aí, cadê ele ?", TimeUnit.MILLISECONDS, temp_dialog);
+				break;
+			}else if(resp5 == 2) {
+				Digita("\n\n - " + nome_aventureiro + " Não consigo ver nada com essa fumaça!", TimeUnit.MILLISECONDS, temp_dialog);
+			    break;
+			}else {
+				System.out.println("Você não digitou uma resposta valída!");
+			}
+		} while(resp5 != 1 || resp5 != 2);
+		
+		
+		
+	}
 	
 	
 //================================================================ FIM DO CÓDIGO ==============================================================================================================================	
