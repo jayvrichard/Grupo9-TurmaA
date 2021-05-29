@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 class Jogo {
-	private static final String nome_aventureiro = " "; ////Precisa verificar o porque não consigo colocar o nome do aventureiro nos dialogos
+	private static final String nome_aventureiro = null; ////Precisa verificar o porque não consigo colocar o nome do aventureiro nos dialogos
 	
      ////static int temp_dialog = 60, temp_narrativa = 130, temp_transicao = 20;   //Tempo correto do game
 	static int temp_dialog = 0, temp_narrativa = 0, temp_transicao = 0; // Para rodar o jogo sem o delay nas
@@ -171,13 +171,13 @@ class Jogo {
 			resp = entrada.nextInt();
 			
 		if (resp == 1) {
-			Digita("\n - Mestre dos magos: Isso é o que veremos!", TimeUnit.MILLISECONDS, temp_dialog);
+			Digita("\n\n - Mestre dos magos: Isso é o que veremos!", TimeUnit.MILLISECONDS, temp_dialog);
 			Digita("\n\n “Então, uma batalha intensa é travada entre dois magos poderosos e no meio dos destroços uma criança sozinha e indefesa é vista tentando se esconder para não ser atingida… O Aprendiz volta para tentar ajudar seu mestre.”", TimeUnit.MILLISECONDS, temp_dialog);
 break;
 			
 		} else if (resp == 2) {
 			
-			Digita("\n - Mestre dos magos: Você não é páreo para mim!", TimeUnit.MILLISECONDS, temp_dialog);
+			Digita("\n\n - Mestre dos magos: Você não é páreo para mim!", TimeUnit.MILLISECONDS, temp_dialog);
 			Digita("\n\n “Então, uma batalha intensa é travada entre dois magos poderosos e no meio dos destroços uma criança sozinha e indefesa é vista tentando se esconder para não ser atingida… O Aprendiz volta para tentar ajudar seu mestre.”", TimeUnit.MILLISECONDS, temp_dialog);
 break;
             
@@ -221,12 +221,12 @@ break;
 			resp1 = entrada.nextInt();
 
 			if (resp1 == 1) {
-				Digita("\n - " + nome_aventureiro + " Eu quero proteger nossa vila do homem que matou nosso Pai!!  ", TimeUnit.MILLISECONDS, temp_dialog);
+				Digita("\n\n - " + nome_aventureiro + " Eu quero proteger nossa vila do homem que matou nosso Pai!!  ", TimeUnit.MILLISECONDS, temp_dialog);
 			
 
 			} else if (resp1 == 2) {
 
-				Digita("\n - " + nome_aventureiro + " Eu não sei se um dia conseguirei ser bom como você meu irmão", TimeUnit.MILLISECONDS, temp_dialog);
+				Digita("\n\n - " + nome_aventureiro + " Eu não sei se um dia conseguirei ser bom como você meu irmão", TimeUnit.MILLISECONDS, temp_dialog);
 
 			} else {
 				System.out.println("Você não digitou uma resposta valída!");
@@ -277,10 +277,10 @@ break;
 			resp = entrada.nextInt();
 			
 			if(resp == 1) {
-				Digita("\n - " + nome_aventureiro + " Vamos estou pronto!", TimeUnit.MILLISECONDS, temp_dialog);
+				Digita("\n\n - " + nome_aventureiro + " Vamos estou pronto!", TimeUnit.MILLISECONDS, temp_dialog);
 				break;
 			}else if(resp == 2) {
-				Digita("\n - " + nome_aventureiro + " Esperaaaaa, eu estou cansado!", TimeUnit.MILLISECONDS, temp_dialog);
+				Digita("\n\n - " + nome_aventureiro + " Esperaaaaa, eu estou cansado!", TimeUnit.MILLISECONDS, temp_dialog);
 			    break;
 			}else {
 				System.out.println("Você não digitou uma resposta valída!");
@@ -582,7 +582,550 @@ break;
 
 	
 	static void final_1() throws Exception {
-		Digita("\n\n  Grannus: TESTEEEEEEEE",  TimeUnit.MILLISECONDS, temp_dialog);
+		Scanner entrada = new Scanner(System.in);
+		
+		Digita("\n\n  Doodou: Boaaa " + nome_aventureiro + "! Agora, segure ele até o feitiço fazer efeito!",  TimeUnit.MILLISECONDS, temp_dialog);
+		
+int resp;
+		
+		do {
+			Digita("\n\n - " + nome_aventureiro + " 1} Doodou, isso vai dar certo? 2} Ele pode morrer?", TimeUnit.MILLISECONDS, temp_dialog);
+			
+			System.out.println("\n");
+			resp = entrada.nextInt();
+			
+			if(resp == 1) {
+				Digita("\n\n - " + nome_aventureiro + " Doodou, isso vai dar certo?", TimeUnit.MILLISECONDS, temp_dialog);
+				break;
+			}else if(resp == 2) {
+				Digita("\n\n - " + nome_aventureiro + " Ele pode morrer?", TimeUnit.MILLISECONDS, temp_dialog);
+			    break;
+			}else {
+				System.out.println("Você não digitou uma resposta valída!");
+			}
+			
+		} while(resp != 1 || resp != 2);
+		
+		Digita("\n\n  Doodou: Eu espero que dê certo e que ele não morra!!",  TimeUnit.MILLISECONDS, temp_dialog);
+		Digita("\n\n  Grannus: O que você feeeez!!",  TimeUnit.MILLISECONDS, temp_dialog);
+		Digita("\n\n - " + nome_aventureiro + " e Doodou torcem para que o efeito da poção faça com que Grannus volte a si depois de tantos anos enfeitiçado, caso contrário eles não terão escolha ao não ser matá-lo.",  TimeUnit.MILLISECONDS, temp_dialog);
+		Digita("\n\n  Doodou: Veja " + nome_aventureiro + " eu disse que ia dar certo!",  TimeUnit.MILLISECONDS, temp_dialog);
+		
+int resp1;
+		
+		do {
+			Digita("\n\n - " + nome_aventureiro + " 1} Grannus olhe pra mim, você sabe quem sou? 2} Eu acho que isso ainda não acabou!", TimeUnit.MILLISECONDS, temp_dialog);
+			
+			System.out.println("\n");
+			resp1 = entrada.nextInt();
+			
+			if(resp1 == 1) {
+				Digita("\n\n - " + nome_aventureiro + " Grannus olhe pra mim, você sabe quem sou? ", TimeUnit.MILLISECONDS, temp_dialog);
+				break;
+			}else if(resp1 == 2) {
+				Digita("\n\n - " + nome_aventureiro + " Eu acho que isso ainda não acabou!", TimeUnit.MILLISECONDS, temp_dialog);
+			    break;
+			}else {
+				System.out.println("Você não digitou uma resposta valída!");
+			}
+			
+		} while(resp1 != 1 || resp1 != 2);
+		
+		Digita("\n\n  Grannus: Onde… onde estou, que lugar é esse?",  TimeUnit.MILLISECONDS, temp_dialog);
+		Digita("\n\n  Porque vocês estão aqui?",  TimeUnit.MILLISECONDS, temp_dialog);
+		Digita("\n\n  Doodou: AAAHH É essa poção pegou ele de jeito!",  TimeUnit.MILLISECONDS, temp_dialog);
+		Digita("\n\n  Grannus: Você é a criança não é? Que salvamos aquele dia! Onde está meu mestre?",  TimeUnit.MILLISECONDS, temp_dialog);
+		Digita("\n\n  Doodou você sabe!! ONDE ESTÁ MEU MESTRE!!!!",  TimeUnit.MILLISECONDS, temp_dialog);
+		Digita("\n\n  Doodou: Olha cara… temos muito pra te contar.",  TimeUnit.MILLISECONDS, temp_dialog);
+		
+int resp2;
+		
+		do {
+            Digita("\n\n - " + nome_aventureiro + " 1} Vamos te contar tudo que precisa saber! 2} Você realmente não se lembra de nada?", TimeUnit.MILLISECONDS, temp_dialog);
+			
+			System.out.println("\n");
+			resp2 = entrada.nextInt();
+			
+			if(resp2 == 1) {
+				Digita("\n\n - " + nome_aventureiro + " Vamos te contar tudo que precisa saber!", TimeUnit.MILLISECONDS, temp_dialog);
+				Digita("\n\n  Grannus: Eu não entendo! Está tudo girando pra mim!",  TimeUnit.MILLISECONDS, temp_dialog);
+				
+				
+			}else if(resp2 == 2) {
+				Digita("\n\n - " + nome_aventureiro + " Você realmente não se lembra de nada?", TimeUnit.MILLISECONDS, temp_dialog);
+				Digita("\n\n  Grannus: Eu me lembro de que... me lembro que salvamos a cidade e derrotamos o Centrion!",  TimeUnit.MILLISECONDS, temp_dialog);
+				Digita("\n\n  O que aconteceu depois?", TimeUnit.MILLISECONDS, temp_dialog);
+			    break;
+			}else {
+				System.out.println("Você não digitou uma resposta valída!");
+			}
+			
+		} while(resp2 != 1 || resp2 != 2);
+		
+int resp3;
+		
+		do {
+			Digita("\n\n - " + nome_aventureiro + " 1} Vamos levá-lo pra casa, ainda precisamos da ajuda dele! 2} Doodou você acredita nele?", TimeUnit.MILLISECONDS, temp_dialog);
+			
+			System.out.println("\n");
+			resp3 = entrada.nextInt();
+			
+			if(resp3 == 1) {
+				Digita("\n\n - " + nome_aventureiro + " Vamos levá-lo pra casa, ainda precisamos da ajuda dele! ", TimeUnit.MILLISECONDS, temp_dialog);
+				break;
+			}else if(resp3 == 2) {
+				Digita("\n\n - " + nome_aventureiro + " Doodou você acredita nele? ", TimeUnit.MILLISECONDS, temp_dialog);
+			    break;
+			}else {
+				System.out.println("Você não digitou uma resposta valída!");
+			}
+			
+		} while(resp3 != 1 || resp3 != 2);
+		
+		Digita("\n\n  Doodou: Vamos amarrá-lo eu ainda não confio nele!",  TimeUnit.MILLISECONDS, temp_dialog);
+		Digita("\n\n  Grannus: Vocês ainda não me disseram o que estamos fazendo aqui!",  TimeUnit.MILLISECONDS, temp_dialog);
+		
+int resp4;
+		
+		do {
+			Digita("\n\n - " + nome_aventureiro + " 1} Amarrar Grannus e levá-lo embora. 2} Dizer o que ele precisa saber.", TimeUnit.MILLISECONDS, temp_dialog);
+			
+			System.out.println("\n");
+			resp4 = entrada.nextInt();
+			
+			if(resp4 == 1) {
+				Digita("\n\n - " + nome_aventureiro + " Amarrar Grannus e levá-lo embora. ", TimeUnit.MILLISECONDS, temp_dialog);
+				Digita("\n\n - " + nome_aventureiro + " Já disse que contaremos no caminho, agora me deixe te amarrar! ", TimeUnit.MILLISECONDS, temp_dialog);
+				break;
+			}else if(resp4 == 2) {
+				Digita("\n\n - " + nome_aventureiro + " Dizer o que ele precisa saber.", TimeUnit.MILLISECONDS, temp_dialog);
+				Digita("\n\n - " + nome_aventureiro + " Nós estamos aqui por que você…", TimeUnit.MILLISECONDS, temp_dialog);
+				break;
+			}else {
+				System.out.println("Você não digitou uma resposta valída!");
+			}
+			
+		} while(resp4 != 1 || resp4 != 2);
+		
+		Digita("\n\n  Doodou: EI EI não conte nada a ele agora, contamos no caminho ande logo!!!",  TimeUnit.MILLISECONDS, temp_dialog);
+		Digita("\n\n - " + nome_aventureiro + " Você tem razão, nosso tempo está acabando!", TimeUnit.MILLISECONDS, temp_dialog);
+		Digita("\n\n  Grannus: Tempo ? Do que vocês estão falando?",  TimeUnit.MILLISECONDS, temp_dialog);
+		Digita("\n\n  Doodou: "  + nome_aventureiro + " vou chamar nosso amigo, se prepare e explique a ele o que precisamos fazer!",  TimeUnit.MILLISECONDS, temp_dialog);
+		
+int resp5;
+		
+		do {
+			Digita("\n\n - " + nome_aventureiro + " 1} Lá vem você com suas ideias rsrs. 2} HAHAHA ele vai adorar isso!!", TimeUnit.MILLISECONDS, temp_dialog);
+			
+			System.out.println("\n");
+			resp5 = entrada.nextInt();
+			
+			if(resp5 == 1) {
+				Digita("\n\n - " + nome_aventureiro + " Lá vem você com suas ideias rsrs. ", TimeUnit.MILLISECONDS, temp_dialog);
+				break;
+			}else if(resp5 == 2) {
+				Digita("\n\n - " + nome_aventureiro + " HAHAHA ele vai adorar isso!!", TimeUnit.MILLISECONDS, temp_dialog);
+				break;
+			}else {
+				System.out.println("Você não digitou uma resposta valída!");
+			}
+			
+		} while(resp5 != 1 || resp5 != 2);
+		
+		Digita("\n\n  Doodou: "  + nome_aventureiro + ", para irmos embora vamos precisar das coordenadas! você consegue olhar no livro?",  TimeUnit.MILLISECONDS, temp_dialog);
+		
+		boolean acertou = false;
+		int contador = 0;
+		List alternativas = new ArrayList();
+		alternativas.add("-3,0"); // resposta correta
+		alternativas.add("3,0");
+		alternativas.add("2,5");
+		alternativas.add("-2,5");
+		alternativas.add("0,5");
+		do {
+			Collections.shuffle(alternativas);
+			System.out.println("\n\n Volte pra casa e salve sua irmã mas você vai precisar das coordenadas do vértice de uma função do segundo grau definida por f(x) = 2x2 + 10x + 12? ");
+			System.out.println("a) " + alternativas.get(0));
+			System.out.println("b) " + alternativas.get(1));
+			System.out.println("c) " + alternativas.get(2));
+			System.out.println("d) " + alternativas.get(3));
+			System.out.println("e) " + alternativas.get(4));
+			System.out.print("Escolha uma alternativa: ");
+			String resposta = entrada.next();
+			switch (resposta) {
+			case "a":
+			case "A":
+				if (alternativas.get(0).equals("-3,0")) {
+					System.out.println("Resposta correta!");
+					acertou = true;
+					contador++;
+				} else {
+					System.out.println("Resposta incorreta!");
+					contador++;
+				}
+				break;
+			case "b":
+			case "B":
+				if (alternativas.get(1).equals("-3,0")) {
+					System.out.println("Resposta correta!");
+					acertou = true;
+					contador++;
+				} else {
+					System.out.println("Resposta incorreta!");
+					contador++;
+				}
+				break;
+			case "c":
+			case "C":
+				if (alternativas.get(2).equals("-3,0")) {
+					System.out.println("Resposta correta!");
+					acertou = true;
+					contador++;
+				} else {
+					System.out.println("Resposta incorreta!");
+					contador++;
+				}
+				break;
+			case "d":
+			case "D":
+				if (alternativas.get(3).equals("-3,0")) {
+					System.out.println("Resposta correta!");
+					acertou = true;
+					contador++;
+				} else {
+					System.out.println("Resposta incorreta!");
+					contador++;
+				}
+				break;
+			case "e":
+			case "E":
+				if (alternativas.get(4).equals("-3,0")) {
+					System.out.println("Resposta correta!");
+					acertou = true;
+					contador++;
+				} else {
+					System.out.println("Resposta incorreta!");
+					contador++;
+				}
+				break;
+			default:
+				System.out.println("Escolha inválida!");
+			}
+		} while (!acertou & contador < 3);
+		
+		if (acertou) {
+			System.out.println("Você acertou com " + contador + " tentativa!");
+			} else {
+			System.err.println("Você errou 3 vezes seguidas!");
+	}
+		
+		Digita("\n\n - " + nome_aventureiro + " Grannus vamos embora num Hipogrifo, ele é nosso amigo mas por via das dúvidas faça a reverência precisamos de você vivo! ", TimeUnit.MILLISECONDS, temp_dialog);
+		Digita("\n\n  Grannus: UM HIPOGRIFO??  Só quero entender o que estamos fazendo!",  TimeUnit.MILLISECONDS, temp_dialog);
+		
+int resp6;
+		
+		do {
+			Digita("\n\n - " + nome_aventureiro + " 1} Fique tranquilo, te explicaremos tudo no caminho! 2} Chamar Hipogrifo.", TimeUnit.MILLISECONDS, temp_dialog);
+			
+			System.out.println("\n");
+			resp6 = entrada.nextInt();
+			
+			if(resp6 == 1) {
+				Digita("\n\n - " + nome_aventureiro + " Fique tranquilo, te explicaremos tudo no caminho! ", TimeUnit.MILLISECONDS, temp_dialog);
+				break;
+			}else if(resp6 == 2) {
+				Digita("\n\n - " + nome_aventureiro + " Chamar Hipogrifo.", TimeUnit.MILLISECONDS, temp_dialog);
+				break;
+			}else {
+				System.out.println("Você não digitou uma resposta valída!");
+			}
+			
+		} while(resp6 != 1 || resp6 != 2);
+		
+		Digita("\n\n  IIIAAARRG", TimeUnit.MILLISECONDS, temp_dialog);
+		Digita("\n\n  Doodou: Lá vem ele!!",  TimeUnit.MILLISECONDS, temp_dialog);
+		Digita("\n\n - " + nome_aventureiro + " Muito bem garoto, precisamos da sua ajuda!", TimeUnit.MILLISECONDS, temp_dialog);
+		Digita("\n\n  Doodou: Vamos lá subam!",  TimeUnit.MILLISECONDS, temp_dialog);
+		Digita("\n\n  Enquanto o forte Hipogrifo leva-os para casa, Doodou e " + nome_aventureiro + " contam tudo que Grannus precisava saber.", TimeUnit.MILLISECONDS, temp_dialog);
+		Digita("\n\n  Doodou: Olhem... estamos chegando!!!",  TimeUnit.MILLISECONDS, temp_dialog);
+		Digita("\n\n - " + nome_aventureiro + " [...] então Grannus resumindo nós precisamos que você liberte minha irmã da maldição que você lançou nela, meu irmão Solveig está com ela agora tentando encontrar um jeito de libertá-la.", TimeUnit.MILLISECONDS, temp_dialog);
+		Digita("\n\n  Grannus: Santo Merlim... eu não consigo acreditar que fiz isso! Eu cuidei daquela menina como uma irmã!",  TimeUnit.MILLISECONDS, temp_dialog);
+		Digita("\n\n  Doodou: Não se culpe meu amigo, nós sabemos como Centrion era poderoso!",  TimeUnit.MILLISECONDS, temp_dialog);
+		Digita("\n\n  Grannus: Eu sinto muito...",  TimeUnit.MILLISECONDS, temp_dialog);
+		
+int resp7;
+		
+		do {
+			Digita("\n\n - " + nome_aventureiro + " 1} Você vai poder se desculpar quando salvar a minha irmã! 2} Se não salvarmos ela hoje, ela morrerá à meia noite.", TimeUnit.MILLISECONDS, temp_dialog);
+			
+			System.out.println("\n");
+			resp7 = entrada.nextInt();
+			
+			if(resp7 == 1) {
+				Digita("\n\n - " + nome_aventureiro + " Você vai poder se desculpar quando salvar a minha irmã! ", TimeUnit.MILLISECONDS, temp_dialog);
+				break;
+			}else if(resp7 == 2) {
+				Digita("\n\n - " + nome_aventureiro + " Se não salvarmos ela hoje, ela morrerá à meia noite.", TimeUnit.MILLISECONDS, temp_dialog);
+				break;
+			}else {
+				System.out.println("Você não digitou uma resposta valída!");
+			}
+			
+		} while(resp7 != 1 || resp7 != 2);
+		
+		Digita("\n\n  Doodou: Já estou vendo a casa, vamos lá garoto mais rápido!",  TimeUnit.MILLISECONDS, temp_dialog);
+		Digita("\n\n  Doodou: Chegamos! Estamos em casa!",  TimeUnit.MILLISECONDS, temp_dialog);
+		
+int resp8;
+		
+		do {
+			Digita("\n\n - " + nome_aventureiro + " 1}  Chamar Solveing 2} Entrar na casa", TimeUnit.MILLISECONDS, temp_dialog);
+			
+			System.out.println("\n");
+			resp8 = entrada.nextInt();
+			
+			if(resp8 == 1) {
+				Digita("\n\n - " + nome_aventureiro + " Solveing chegamos!! Está em casa? ", TimeUnit.MILLISECONDS, temp_dialog);
+				Digita("\n\n  Solveing: Graças a Merlim vocês voltaram!!",  TimeUnit.MILLISECONDS, temp_dialog);
+				Digita("\n\n - " + nome_aventureiro + " Estamos aqui meu querido irmão e trago boas notícias!", TimeUnit.MILLISECONDS, temp_dialog);
+				Digita("\n\n  Solveing: Vocês conseguiram?",  TimeUnit.MILLISECONDS, temp_dialog);
+				Digita("\n\n  Grannus: Olá Solveing, a quanto tempo!",  TimeUnit.MILLISECONDS, temp_dialog);
+				Digita("\n\n  Solveing: Ele ainda é o Grannus que matou nosso pai?",  TimeUnit.MILLISECONDS, temp_dialog);
+				Digita("\n\n  Doodou: Não Solveing, nós tiramos o feitiço dele.",  TimeUnit.MILLISECONDS, temp_dialog);
+				break;
+			}else if(resp8 == 2) {
+				Digita("\n\n - " + nome_aventureiro + " Está tudo muito calmo, vamos entrar! Hipogrifo, agora você está livre, adeus meu amigo, obrigado por tudo! Vamos Grannus...", TimeUnit.MILLISECONDS, temp_dialog);
+				Digita("\n\n  Solveing: Força Bryanna, preciso que fique forte! tentarei uma nova magia...",  TimeUnit.MILLISECONDS, temp_dialog);
+				Digita("\n\n  Espera ai que barulho é esse?",  TimeUnit.MILLISECONDS, temp_dialog);
+				Digita("\n\n  Graças a Merlim vocês voltaram!!",  TimeUnit.MILLISECONDS, temp_dialog);
+				Digita("\n\n - " + nome_aventureiro + "Estamos aqui meu querido irmão e trago boas notícias!", TimeUnit.MILLISECONDS, temp_dialog);
+				Digita("\n\n  Solveing: Vocês conseguiram?",  TimeUnit.MILLISECONDS, temp_dialog);
+				Digita("\n\n  Grannus: Olá Solveing, a quanto tempo!",  TimeUnit.MILLISECONDS, temp_dialog);
+				Digita("\n\n  Solveing: Ele ainda é o Grannus que matou nosso pai?",  TimeUnit.MILLISECONDS, temp_dialog);
+				Digita("\n\n  Doodou: Não Solveing, nós tiramos o feitiço dele.",  TimeUnit.MILLISECONDS, temp_dialog);
+				break;
+			}else {
+				System.out.println("Você não digitou uma resposta valída!");
+			}
+			
+		} while(resp8 != 1 || resp8 != 2);
+		
+int resp9;
+		
+		do {
+			Digita("\n\n - " + nome_aventureiro + " 1} Como está nossa irmã? 2} Vamos logo com isso, estamos perdendo tempo!", TimeUnit.MILLISECONDS, temp_dialog);
+			
+			System.out.println("\n");
+			resp9 = entrada.nextInt();
+			
+			if(resp9 == 1) {
+				Digita("\n\n - " + nome_aventureiro + " Como está nossa irmã? ", TimeUnit.MILLISECONDS, temp_dialog);
+				break;
+			}else if(resp9 == 2) {
+				Digita("\n\n - " + nome_aventureiro + " Vamos logo com isso, estamos perdendo tempo!", TimeUnit.MILLISECONDS, temp_dialog);
+				break;
+			}else {
+				System.out.println("Você não digitou uma resposta valída!");
+			}
+			
+		} while(resp9 != 1 || resp9 != 2);
+		
+		Digita("\n\n  Solveing: Meu irmão durante esses dias todos esperando pela sua volta eu busquei em livros e mais livros, eu tentei de tudo que pudesse ajudá-la mas nada do que eu fazia dava certo. Até que encontrei um livro antigo de magia oculta do nosso pai...",  TimeUnit.MILLISECONDS, temp_dialog);
+		Digita("\n\n  Doodou: E o que tinha nele??? Vamos desembucha!!!!",  TimeUnit.MILLISECONDS, temp_dialog);
+		Digita("\n\n  Solveing: Eu não sei se devemos falar sobre isso na presença dele!",  TimeUnit.MILLISECONDS, temp_dialog);
+		
+int resp10;
+		
+		do {
+            Digita("\n\n - " + nome_aventureiro + " 1} Pedir para Solveing revelar o que encontrou. 2} Ter uma conversa a sós com Solveing.", TimeUnit.MILLISECONDS, temp_dialog);
+			
+			System.out.println("\n");
+			resp10 = entrada.nextInt();
+			
+			if(resp10 == 1) {
+				Digita("\n\n - " + nome_aventureiro + " Pode contar, ele veio para nos ajudar!", TimeUnit.MILLISECONDS, temp_dialog);
+				Digita("\n\n  Solveing: Muito bem, o livro dizia que maldições lançadas por magos poderosos só podem ser quebradas se ou quando eles morrerem!",  TimeUnit.MILLISECONDS, temp_dialog);
+				Digita("\n\n ... há um silêncio no ar enquanto todos pensam numa maneira de salvar Bryanna.", TimeUnit.MILLISECONDS, temp_dialog);
+				Digita("\n\n  Doodou: Pois bem, olha só eu não queria dizer isso mas...",  TimeUnit.MILLISECONDS, temp_dialog);
+				Digita("\n\n  Grannus: EU ME SACRIFICO!!!",  TimeUnit.MILLISECONDS, temp_dialog);
+				
+				int resp11;
+				 
+				Digita("\n\n - " + nome_aventureiro + " 1} Você não precisa fazer isso! 2} Eu sei que você sempre foi fiel ao meu pai, faça o que for preciso!", TimeUnit.MILLISECONDS, temp_dialog);
+				 System.out.println("\n");
+				 resp11 = entrada.nextInt();
+				 
+				 if(resp11 == 1) {
+						Digita("\n\n - " + nome_aventureiro + " Você não precisa fazer isso!", TimeUnit.MILLISECONDS, temp_dialog);
+						Digita("\n\n  Grannus: Eu vou fazer isso por ela e pelo meu mestre, eu nunca me perdoaria se a Bryanna morresse!!",  TimeUnit.MILLISECONDS, temp_dialog);
+						Digita("\n\n  Solveing: Ela está no quarto, subindo as escadas.",  TimeUnit.MILLISECONDS, temp_dialog);
+						Digita("\n\n  Grannus: Eu vou me despedir dela.",  TimeUnit.MILLISECONDS, temp_dialog);
+						Digita("\n\n  Bryanna: Quem está aí? Solveing é você?",  TimeUnit.MILLISECONDS, temp_dialog);
+						Digita("\n\n  Grannus: Olá Bryanna, é o Grannus, lembra de mim?",  TimeUnit.MILLISECONDS, temp_dialog);
+						Digita("\n\n  Bryanna: Eu era muito pequena, você era o Aprendiz do meu pai não era?",  TimeUnit.MILLISECONDS, temp_dialog);
+						Digita("\n\n  Você o matou!",  TimeUnit.MILLISECONDS, temp_dialog);
+						Digita("\n\n  Grannus: Sim Bryanna eu matei o seu pai, ele era meu mestre! Mas por favor não quero que pense assim de mim, eu não sabia o que estava fazendo… na verdade eu o amava muito! Eu vou tirar você dessa maldição custe o que custar!!!",  TimeUnit.MILLISECONDS, temp_dialog);
+						Digita("\n\n  Só vim aqui para te dizer uma coisa que seu pai me disse quando estava me ensinando suas magias...",  TimeUnit.MILLISECONDS, temp_dialog);
+						Digita("\n\n  Bryanna: E o que é ?",  TimeUnit.MILLISECONDS, temp_dialog);
+						Digita("\n\n  Grannus: Proteja o mundo mágico, ele sempre estará lá quando você precisar!",  TimeUnit.MILLISECONDS, temp_dialog);
+						Digita("\n\n  Eu nunca entendi o que ele quis dizer com “ele”, mas acredito que você minha criança deve ser a única capaz de desvendar os mistérios que ainda andam por esses vales e montanhas.",  TimeUnit.MILLISECONDS, temp_dialog);
+						Digita("\n\n  Cuide-se e adeus.",  TimeUnit.MILLISECONDS, temp_dialog);
+						Digita("\n\n  Bryanna: Solveing!! Obrigada!",  TimeUnit.MILLISECONDS, temp_dialog);
+						Digita("\n\n  Apesar de triste pelo o que fez, Solveing procura a felicidade em sua atitude de salvar a garotinha que tanto amava.",  TimeUnit.MILLISECONDS, temp_dialog);
+						break;
+				 }else if(resp11 == 2) {
+					    Digita("\n\n - " + nome_aventureiro + " Eu sei que você sempre foi fiel ao meu pai, faça o que for preciso!", TimeUnit.MILLISECONDS, temp_dialog);
+					    Digita("\n\n  Grannus: Eu vou fazer isso por ela e pelo meu mestre, eu nunca me perdoaria se a Bryanna morresse!!",  TimeUnit.MILLISECONDS, temp_dialog);
+						Digita("\n\n  Solveing: Ela está no quarto, subindo as escadas.",  TimeUnit.MILLISECONDS, temp_dialog);
+						Digita("\n\n  Grannus: Eu vou me despedir dela.",  TimeUnit.MILLISECONDS, temp_dialog);
+						Digita("\n\n  Bryanna: Quem está aí? Solveing é você?",  TimeUnit.MILLISECONDS, temp_dialog);
+						Digita("\n\n  Grannus: Olá Bryanna, é o Grannus, lembra de mim?",  TimeUnit.MILLISECONDS, temp_dialog);
+						Digita("\n\n  Bryanna: Eu era muito pequena, você era o Aprendiz do meu pai não era?",  TimeUnit.MILLISECONDS, temp_dialog);
+						Digita("\n\n  Você o matou!",  TimeUnit.MILLISECONDS, temp_dialog);
+						Digita("\n\n  Grannus: Sim Bryanna eu matei o seu pai, ele era meu mestre! Mas por favor não quero que pense assim de mim, eu não sabia o que estava fazendo… na verdade eu o amava muito! Eu vou tirar você dessa maldição custe o que custar!!!",  TimeUnit.MILLISECONDS, temp_dialog);
+						Digita("\n\n  Só vim aqui para te dizer uma coisa que seu pai me disse quando estava me ensinando suas magias...",  TimeUnit.MILLISECONDS, temp_dialog);
+						Digita("\n\n  Bryanna: E o que é ?",  TimeUnit.MILLISECONDS, temp_dialog);
+						Digita("\n\n  Grannus: Proteja o mundo mágico, ele sempre estará lá quando você precisar!",  TimeUnit.MILLISECONDS, temp_dialog);
+						Digita("\n\n  Eu nunca entendi o que ele quis dizer com “ele”, mas acredito que você minha criança deve ser a única capaz de desvendar os mistérios que ainda andam por esses vales e montanhas.",  TimeUnit.MILLISECONDS, temp_dialog);
+						Digita("\n\n  Cuide-se e adeus.",  TimeUnit.MILLISECONDS, temp_dialog);
+						Digita("\n\n  Bryanna: Solveing!! Obrigada!",  TimeUnit.MILLISECONDS, temp_dialog);
+						Digita("\n\n  Apesar de triste pelo o que fez, Solveing procura a felicidade em sua atitude de salvar a garotinha que tanto amava.",  TimeUnit.MILLISECONDS, temp_dialog);
+					    break;
+				 }else {
+						System.out.println("Você não digitou uma resposta valída!");
+					}
+					
+			}else if(resp10 == 2) {
+				Digita("\n\n - " + nome_aventureiro + " Vamos conversar lá fora meu irmão!", TimeUnit.MILLISECONDS, temp_dialog);
+				Digita("\n\n  Solveing: Muito bem, o livro dizia que maldições lançadas por magos poderosos só podem ser quebradas se ou quando eles morrerem!",  TimeUnit.MILLISECONDS, temp_dialog);
+				Digita("\n\n - " + nome_aventureiro + " Então o Grannus precisa morrer para o feitiço ser revertido?", TimeUnit.MILLISECONDS, temp_dialog);
+				Digita("\n\n  Solveing: É a única forma, como ele matou nosso pai eu posso entrar e matá-lo eu mesmo!",  TimeUnit.MILLISECONDS, temp_dialog);
+				
+				int resp12;
+				 
+				Digita("\n\n - " + nome_aventureiro + " 1} Solveig, nosso pai nos ensinou a nunca ser covarde! 2} Vamos entrar e contar isso a ele.", TimeUnit.MILLISECONDS, temp_dialog);
+				 System.out.println("\n");
+				 resp12 = entrada.nextInt();
+				 
+				 if(resp12 == 1) {
+					Digita("\n\n - " + nome_aventureiro + " Solveig, nosso pai nos ensinou a nunca ser covarde!",  TimeUnit.MILLISECONDS, temp_dialog);	
+					Digita("\n\n  Solveing: Você tem razão meu irmão, conhecendo o pai ele ficaria muito magoado! Vamos entrar e contar a ele tudo que eu aprendi durante esse tempo",  TimeUnit.MILLISECONDS, temp_dialog);
+					Digita("\n\n - " + nome_aventureiro + " Grannus sempre foi uma boa pessoa, tenho certeza que ele vai entender e nos ajudar da melhor forma possível, o hipogrifo que viemos só ajudam pessoas com boas intenções, caso contrário, o Grannus não teria nem chego aqui comigo! ", TimeUnit.MILLISECONDS, temp_dialog);
+					Digita("\n\n  Solveing: Muito bem, vou contar isso a todos... o livro dizia que maldições lançadas por magos poderosos só podem ser quebradas se ou quando eles morrerem!",  TimeUnit.MILLISECONDS, temp_dialog);
+					Digita("\n\n ... há um silêncio no ar enquanto todos pensam numa maneira de salvar Bryanna.", TimeUnit.MILLISECONDS, temp_dialog);
+					Digita("\n\n  Doodou: Pois bem, olha só eu não queria dizer isso mas...",  TimeUnit.MILLISECONDS, temp_dialog);
+					Digita("\n\n  Grannus: EU ME SACRIFICO!!!",  TimeUnit.MILLISECONDS, temp_dialog);
+					
+					int resp13;
+					 
+					Digita("\n\n - " + nome_aventureiro + " 1} Você não precisa fazer isso! 2} Eu sei que você sempre foi fiel ao meu pai, faça o que for preciso!", TimeUnit.MILLISECONDS, temp_dialog);
+					 System.out.println("\n");
+					 resp13 = entrada.nextInt();
+					 
+					 if(resp13 == 1) {
+							Digita("\n\n - " + nome_aventureiro + " Você não precisa fazer isso!", TimeUnit.MILLISECONDS, temp_dialog);
+							Digita("\n\n  Grannus: Eu vou fazer isso por ela e pelo meu mestre, eu nunca me perdoaria se a Bryanna morresse!!",  TimeUnit.MILLISECONDS, temp_dialog);
+							Digita("\n\n  Solveing: Ela está no quarto, subindo as escadas.",  TimeUnit.MILLISECONDS, temp_dialog);
+							Digita("\n\n  Grannus: Eu vou me despedir dela.",  TimeUnit.MILLISECONDS, temp_dialog);
+							Digita("\n\n  Bryanna: Quem está aí? Solveing é você?",  TimeUnit.MILLISECONDS, temp_dialog);
+							Digita("\n\n  Grannus: Olá Bryanna, é o Grannus, lembra de mim?",  TimeUnit.MILLISECONDS, temp_dialog);
+							Digita("\n\n  Bryanna: Eu era muito pequena, você era o Aprendiz do meu pai não era?",  TimeUnit.MILLISECONDS, temp_dialog);
+							Digita("\n\n  Você o matou!",  TimeUnit.MILLISECONDS, temp_dialog);
+							Digita("\n\n  Grannus: Sim Bryanna eu matei o seu pai, ele era meu mestre! Mas por favor não quero que pense assim de mim, eu não sabia o que estava fazendo… na verdade eu o amava muito! Eu vou tirar você dessa maldição custe o que custar!!!",  TimeUnit.MILLISECONDS, temp_dialog);
+							Digita("\n\n  Só vim aqui para te dizer uma coisa que seu pai me disse quando estava me ensinando suas magias...",  TimeUnit.MILLISECONDS, temp_dialog);
+							Digita("\n\n  Bryanna: E o que é ?",  TimeUnit.MILLISECONDS, temp_dialog);
+							Digita("\n\n  Grannus: Proteja o mundo mágico, ele sempre estará lá quando você precisar!",  TimeUnit.MILLISECONDS, temp_dialog);
+							Digita("\n\n  Eu nunca entendi o que ele quis dizer com “ele”, mas acredito que você minha criança deve ser a única capaz de desvendar os mistérios que ainda andam por esses vales e montanhas.",  TimeUnit.MILLISECONDS, temp_dialog);
+							Digita("\n\n  Cuide-se e adeus.",  TimeUnit.MILLISECONDS, temp_dialog);
+							Digita("\n\n  Bryanna: Solveing!! Obrigada!",  TimeUnit.MILLISECONDS, temp_dialog);
+							Digita("\n\n  Apesar de triste pelo o que fez, Solveing procura a felicidade em sua atitude de salvar a garotinha que tanto amava.",  TimeUnit.MILLISECONDS, temp_dialog);
+							break;
+					 }else if(resp13 == 2) {
+						    Digita("\n\n - " + nome_aventureiro + " Eu sei que você sempre foi fiel ao meu pai, faça o que for preciso!", TimeUnit.MILLISECONDS, temp_dialog);
+						    Digita("\n\n  Grannus: Eu vou fazer isso por ela e pelo meu mestre, eu nunca me perdoaria se a Bryanna morresse!!",  TimeUnit.MILLISECONDS, temp_dialog);
+							Digita("\n\n  Solveing: Ela está no quarto, subindo as escadas.",  TimeUnit.MILLISECONDS, temp_dialog);
+							Digita("\n\n  Grannus: Eu vou me despedir dela.",  TimeUnit.MILLISECONDS, temp_dialog);
+							Digita("\n\n  Bryanna: Quem está aí? Solveing é você?",  TimeUnit.MILLISECONDS, temp_dialog);
+							Digita("\n\n  Grannus: Olá Bryanna, é o Grannus, lembra de mim?",  TimeUnit.MILLISECONDS, temp_dialog);
+							Digita("\n\n  Bryanna: Eu era muito pequena, você era o Aprendiz do meu pai não era?",  TimeUnit.MILLISECONDS, temp_dialog);
+							Digita("\n\n  Você o matou!",  TimeUnit.MILLISECONDS, temp_dialog);
+							Digita("\n\n  Grannus: Sim Bryanna eu matei o seu pai, ele era meu mestre! Mas por favor não quero que pense assim de mim, eu não sabia o que estava fazendo… na verdade eu o amava muito! Eu vou tirar você dessa maldição custe o que custar!!!",  TimeUnit.MILLISECONDS, temp_dialog);
+							Digita("\n\n  Só vim aqui para te dizer uma coisa que seu pai me disse quando estava me ensinando suas magias...",  TimeUnit.MILLISECONDS, temp_dialog);
+							Digita("\n\n  Bryanna: E o que é ?",  TimeUnit.MILLISECONDS, temp_dialog);
+							Digita("\n\n  Grannus: Proteja o mundo mágico, ele sempre estará lá quando você precisar!",  TimeUnit.MILLISECONDS, temp_dialog);
+							Digita("\n\n  Eu nunca entendi o que ele quis dizer com “ele”, mas acredito que você minha criança deve ser a única capaz de desvendar os mistérios que ainda andam por esses vales e montanhas.",  TimeUnit.MILLISECONDS, temp_dialog);
+							Digita("\n\n  Cuide-se e adeus.",  TimeUnit.MILLISECONDS, temp_dialog);
+							Digita("\n\n  Bryanna: Solveing!! Obrigada!",  TimeUnit.MILLISECONDS, temp_dialog);
+							Digita("\n\n  Apesar de triste pelo o que fez, Solveing procura a felicidade em sua atitude de salvar a garotinha que tanto amava.",  TimeUnit.MILLISECONDS, temp_dialog);
+						    break;
+					 }else {
+							System.out.println("Você não digitou uma resposta valída!");
+						}
+					break;
+				 }else if(resp12 == 2){
+					 Digita("\n\n - " + nome_aventureiro + " Vamos entrar e contar isso a ele.",  TimeUnit.MILLISECONDS, temp_dialog);
+					 Digita("\n\n  Solveing: Você acha que ele vai entender?",  TimeUnit.MILLISECONDS, temp_dialog);
+					 Digita("\n\n - " + nome_aventureiro + " Grannus sempre foi uma boa pessoa, tenho certeza que ele vai entender e nos ajudar da melhor forma possível, o hipogrifo que viemos só ajudam pessoas com boas intenções, caso contrário, o Grannus não teria nem chego aqui comigo! ", TimeUnit.MILLISECONDS, temp_dialog);
+						Digita("\n\n  Solveing: Muito bem, vou contar isso a todos... o livro dizia que maldições lançadas por magos poderosos só podem ser quebradas se ou quando eles morrerem!",  TimeUnit.MILLISECONDS, temp_dialog);
+						Digita("\n\n ... há um silêncio no ar enquanto todos pensam numa maneira de salvar Bryanna.", TimeUnit.MILLISECONDS, temp_dialog);
+						Digita("\n\n  Doodou: Pois bem, olha só eu não queria dizer isso mas...",  TimeUnit.MILLISECONDS, temp_dialog);
+						Digita("\n\n  Grannus: EU ME SACRIFICO!!!",  TimeUnit.MILLISECONDS, temp_dialog);
+						
+						int resp14;
+						 
+						Digita("\n\n - " + nome_aventureiro + " 1} Você não precisa fazer isso! 2} Eu sei que você sempre foi fiel ao meu pai, faça o que for preciso!", TimeUnit.MILLISECONDS, temp_dialog);
+						 System.out.println("\n");
+						 resp14 = entrada.nextInt();
+						 
+						 if(resp14 == 1) {
+								Digita("\n\n - " + nome_aventureiro + " Você não precisa fazer isso!", TimeUnit.MILLISECONDS, temp_dialog);
+								Digita("\n\n  Grannus: Eu vou fazer isso por ela e pelo meu mestre, eu nunca me perdoaria se a Bryanna morresse!!",  TimeUnit.MILLISECONDS, temp_dialog);
+								Digita("\n\n  Solveing: Ela está no quarto, subindo as escadas.",  TimeUnit.MILLISECONDS, temp_dialog);
+								Digita("\n\n  Grannus: Eu vou me despedir dela.",  TimeUnit.MILLISECONDS, temp_dialog);
+								Digita("\n\n  Bryanna: Quem está aí? Solveing é você?",  TimeUnit.MILLISECONDS, temp_dialog);
+								Digita("\n\n  Grannus: Olá Bryanna, é o Grannus, lembra de mim?",  TimeUnit.MILLISECONDS, temp_dialog);
+								Digita("\n\n  Bryanna: Eu era muito pequena, você era o Aprendiz do meu pai não era?",  TimeUnit.MILLISECONDS, temp_dialog);
+								Digita("\n\n  Você o matou!",  TimeUnit.MILLISECONDS, temp_dialog);
+								Digita("\n\n  Grannus: Sim Bryanna eu matei o seu pai, ele era meu mestre! Mas por favor não quero que pense assim de mim, eu não sabia o que estava fazendo… na verdade eu o amava muito! Eu vou tirar você dessa maldição custe o que custar!!!",  TimeUnit.MILLISECONDS, temp_dialog);
+								Digita("\n\n  Só vim aqui para te dizer uma coisa que seu pai me disse quando estava me ensinando suas magias...",  TimeUnit.MILLISECONDS, temp_dialog);
+								Digita("\n\n  Bryanna: E o que é ?",  TimeUnit.MILLISECONDS, temp_dialog);
+								Digita("\n\n  Grannus: Proteja o mundo mágico, ele sempre estará lá quando você precisar!",  TimeUnit.MILLISECONDS, temp_dialog);
+								Digita("\n\n  Eu nunca entendi o que ele quis dizer com “ele”, mas acredito que você minha criança deve ser a única capaz de desvendar os mistérios que ainda andam por esses vales e montanhas.",  TimeUnit.MILLISECONDS, temp_dialog);
+								Digita("\n\n  Cuide-se e adeus.",  TimeUnit.MILLISECONDS, temp_dialog);
+								Digita("\n\n  Bryanna: Solveing!! Obrigada!",  TimeUnit.MILLISECONDS, temp_dialog);
+								Digita("\n\n  Apesar de triste pelo o que fez, Solveing procura a felicidade em sua atitude de salvar a garotinha que tanto amava.",  TimeUnit.MILLISECONDS, temp_dialog);
+								break;
+						 }else if(resp14 == 2) {
+							    Digita("\n\n - " + nome_aventureiro + " Eu sei que você sempre foi fiel ao meu pai, faça o que for preciso!", TimeUnit.MILLISECONDS, temp_dialog);
+							    Digita("\n\n  Grannus: Eu vou fazer isso por ela e pelo meu mestre, eu nunca me perdoaria se a Bryanna morresse!!",  TimeUnit.MILLISECONDS, temp_dialog);
+								Digita("\n\n  Solveing: Ela está no quarto, subindo as escadas.",  TimeUnit.MILLISECONDS, temp_dialog);
+								Digita("\n\n  Grannus: Eu vou me despedir dela.",  TimeUnit.MILLISECONDS, temp_dialog);
+								Digita("\n\n  Bryanna: Quem está aí? Solveing é você?",  TimeUnit.MILLISECONDS, temp_dialog);
+								Digita("\n\n  Grannus: Olá Bryanna, é o Grannus, lembra de mim?",  TimeUnit.MILLISECONDS, temp_dialog);
+								Digita("\n\n  Bryanna: Eu era muito pequena, você era o Aprendiz do meu pai não era?",  TimeUnit.MILLISECONDS, temp_dialog);
+								Digita("\n\n  Você o matou!",  TimeUnit.MILLISECONDS, temp_dialog);
+								Digita("\n\n  Grannus: Sim Bryanna eu matei o seu pai, ele era meu mestre! Mas por favor não quero que pense assim de mim, eu não sabia o que estava fazendo… na verdade eu o amava muito! Eu vou tirar você dessa maldição custe o que custar!!!",  TimeUnit.MILLISECONDS, temp_dialog);
+								Digita("\n\n  Só vim aqui para te dizer uma coisa que seu pai me disse quando estava me ensinando suas magias...",  TimeUnit.MILLISECONDS, temp_dialog);
+								Digita("\n\n  Bryanna: E o que é ?",  TimeUnit.MILLISECONDS, temp_dialog);
+								Digita("\n\n  Grannus: Proteja o mundo mágico, ele sempre estará lá quando você precisar!",  TimeUnit.MILLISECONDS, temp_dialog);
+								Digita("\n\n  Eu nunca entendi o que ele quis dizer com “ele”, mas acredito que você minha criança deve ser a única capaz de desvendar os mistérios que ainda andam por esses vales e montanhas.",  TimeUnit.MILLISECONDS, temp_dialog);
+								Digita("\n\n  Cuide-se e adeus.",  TimeUnit.MILLISECONDS, temp_dialog);
+								Digita("\n\n  Bryanna: Solveing!! Obrigada!",  TimeUnit.MILLISECONDS, temp_dialog);
+								Digita("\n\n  Apesar de triste pelo o que fez, Solveing procura a felicidade em sua atitude de salvar a garotinha que tanto amava.",  TimeUnit.MILLISECONDS, temp_dialog);
+							    break;
+						 }else {
+								System.out.println("Você não digitou uma resposta valída!");
+							}
+						break; 
+				 }
+				 
+			}else {
+				System.out.println("Você não digitou uma resposta valída!");
+			}
+			
+		} while(resp10 != 1 || resp10 != 2);
+		
+		
 		final_2();
 	}
 	
