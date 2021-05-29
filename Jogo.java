@@ -64,7 +64,7 @@ class Jogo {
 		Scanner entrada = new Scanner(System.in);
 		int escolha_menu, temp_narrativa = 80;
 		
-		Digita("\n O  Jogo baseado no modo RPG Textual é uma troca de mensagens em que o jogador move a trama do ponto de vista do seu personagem atráves de uma pergunta respondida.\r\n\n - A cada pergunta respondida o jogo dará opções de caminhos para explorar.\r\n\n Ou seja, Mantenha total atenção na hora de responder.\r\n" + "  ", TimeUnit.MILLISECONDS, temp_narrativa);
+		Digita("\n O  Jogo baseado no modo RPG Textual é uma troca de mensagens em que o jogador move a trama do ponto de vista do seu personagem atráves de uma pergunta respondida.\r\n\n - A cada pergunta respondida o jogo dará opções de caminhos para explorar.\r\n\n Ou seja, mantenha total atenção na hora de responder.\r\n" + "  ", TimeUnit.MILLISECONDS, temp_narrativa);
 		
 		do {
 			System.out.println();
@@ -589,10 +589,281 @@ break;
 //================================================================ Final 2 ==============================================================================================================================	
 	
     static void final_2() throws Exception {
-    	Digita("\n\n  Grannus: TESTeeeeeee",  TimeUnit.MILLISECONDS, temp_dialog);
-    	System.exit(0);
-	}
+    	Scanner entrada = new Scanner(System.in);
+    	
+    	 Digita("\n\n Doodou: NÃOOOOOOOO, VOCÊ ERROU!", TimeUnit.MILLISECONDS, temp_dialog);
+    	 Digita("\n\n Grannus: HAHAHAHAHAHA, VOCÊ CONTAVA COM A AJUDA DELE POBRE ALMA", TimeUnit.MILLISECONDS, temp_dialog);
+    	 Digita("\n\n Doodou: “AAAAAAAAAAAAARRRRGGG, DESCULPE JOGADOR!", TimeUnit.MILLISECONDS, temp_dialog);
+    	 Digita("\n\n - " + nome_aventureiro + " NÃOOOOOO DODOUUUUUU!", TimeUnit.MILLISECONDS, temp_dialog);
+    	 
+    	int resp;
+    	do {
+            Digita("\n\n 1} Chamar o Grannus para a briga. 2} Tentar salvar o Doodou", TimeUnit.MILLISECONDS, temp_dialog);
+			
+			System.out.println("\n");
+			resp = entrada.nextInt();
+			
+			if(resp == 1) {
+				Digita("\n\n - " + nome_aventureiro + " AAAAAA, VOCÊ VAI SE ARREPENDER!!", TimeUnit.MILLISECONDS, temp_dialog);
+				Digita("\n\n  Grannus:  Isso é o que veremos, pobre criança. Agora é a sua vez de morrer!",  TimeUnit.MILLISECONDS, temp_dialog);
+				
+				
+			}else if(resp == 2) {
+				Digita("\n\n - " + nome_aventureiro + " Doodoouuu, acorde, não por favor, eu preciso de você!", TimeUnit.MILLISECONDS, temp_dialog);
+				Digita("\n\n  Grannus: “Ele está morto, agora é a sua vez e depois eu acabo com todos os seres desse mundo!”",  TimeUnit.MILLISECONDS, temp_dialog);
+			    break;
+			}else {
+				System.out.println("Você não digitou uma resposta valída!");
+			}
+			
+		} while(resp != 1 || resp != 2);
 	
+    
+    int resp2;
+    
+	do {
+        Digita("\n\n 1} Enfiar a espada no peito de Grannus "
+        		+ "2} Terminar o feitiço de doodou e fazer com que ele volte a ser quem era!\r\n"
+        		+ "", TimeUnit.MILLISECONDS, temp_dialog);
+		
+		System.out.println("\n");
+		resp2 = entrada.nextInt();
+		
+		if(resp2 == 1) {
+			Digita("\n\n - " + nome_aventureiro + " UUUUAAARRG TOME ISSO!!", TimeUnit.MILLISECONDS, temp_dialog);
+			Digita("\n\n  Grannus:  Eu já te disse criança, você vai precisar mais que uma espada para me vencer!",  TimeUnit.MILLISECONDS, temp_dialog);
+			Digita("\n\n - " + nome_aventureiro + " Você tem razão! Obrigado Doodou, por ter me deixado isso.!!", TimeUnit.MILLISECONDS, temp_dialog);
+			Digita("\n\n  Grannus:  Ei, o que você está fazendo ?",  TimeUnit.MILLISECONDS, temp_dialog);
+			Digita("\n\n - " + nome_aventureiro + " ESSA É A SUA VOLTA PARA CASA!!", TimeUnit.MILLISECONDS, temp_dialog);
+			Digita("\n\n  Grannus:  AAAAAAAAAA, O QUE ESTÁ ACONTECENDO COMIGO?",  TimeUnit.MILLISECONDS, temp_dialog);
+			
+			
+		}else if(resp2 == 2) {
+			Digita("\n\n Grannus:  AAAAAAAAAA, O QUE ESTÁ ACONTECENDO COMIGO?",  TimeUnit.MILLISECONDS, temp_dialog);
+			Digita("\n\n - " + nome_aventureiro + "Grannus, você se lembra de mim?", TimeUnit.MILLISECONDS, temp_dialog);
+			Digita("\n\n Grannus: " + nome_aventureiro + " o que está acontecendo, onde estou?", TimeUnit.MILLISECONDS, temp_dialog);
+			Digita("\n\n - " + nome_aventureiro + " Você foi enfeitiçado pelo irmão do mestre, ficou anos em essa magia dentro de você! Agora você está livre, você está melhor?", TimeUnit.MILLISECONDS, temp_dialog);
+			Digita("\n\n Grannus: “Estou bem melhor, aaaah, o que eu fiz? o que aconteceu?",  TimeUnit.MILLISECONDS, temp_dialog);
+		    break;
+		}else {
+			System.out.println("Você não digitou uma resposta valída!");
+		}
+		
+	} while(resp2 != 1 || resp2 != 2);
+
+
+    int resp3;
+    
+   	do {
+           Digita("\n\n 1} Vamos embora, no caminho eu te explico! 2} Você machucou muita gente, quer dizer, a magia que estava dentro de você!", TimeUnit.MILLISECONDS, temp_dialog);
+   		
+   		System.out.println("\n");
+   		resp3 = entrada.nextInt();
+   		
+   		if(resp3 == 1) {
+   			Digita("\n\n  Grannus:  Vamos!",  TimeUnit.MILLISECONDS, temp_dialog);
+   			Digita("\n\n - " + nome_aventureiro + " “Aconteceu diversas coisas desde que a magia entrou em seu corpo, você matou o mestre e antes de ir embora amaldiçoou a Bryanna com um feitiço maligno que está destruindo-a por dentro e fora,"
+   					+ " achamos que você não estava mais vivo, porém com vários acontecimentos soubemos da sua existência e por isso viemos atrás de você, nós achamos que a única forma de salvar a Bryanna é você refazer o feitiço que a assola noite e dia!", TimeUnit.MILLISECONDS, temp_dialog);
+   			Digita("\n\n  Grannus:  Como assim feitiço, como eu fiz isso? Como eu vou desfazê-lo?",  TimeUnit.MILLISECONDS, temp_dialog);
+   			Digita("\n\n - " + nome_aventureiro + " Vamos embora dessa região, quando chegarmos a gente estuda uma forma de salvá-la", TimeUnit.MILLISECONDS, temp_dialog);
+   			
+   		}else if(resp3 == 2) {
+   			Digita("\n\n  Grannus:  “Meu deus, espero que me perdoem! será que as pessoas vão entender?",  TimeUnit.MILLISECONDS, temp_dialog);
+   			Digita("\n\n - " + nome_aventureiro + " Espero que sim, isso não foi culpa sua!", TimeUnit.MILLISECONDS, temp_dialog);
+   			Digita("\n\n  Grannus:  Eu fiquei quanto tempo com essa magia? o que eu fiz de ruim para a família do mago?",  TimeUnit.MILLISECONDS, temp_dialog);
+   			Digita("\n\n - " + nome_aventureiro + "Essa magia está dentro de você a muito tempo, aconteceu diversas coisas desde que a magia entrou em seu corpo, você matou o mestre e antes de ir embora amaldiçoou a Bryanna com um feitiço maligno que está destruindo-a por dentro e fora, achamos que você não estava mais vivo, porém com vários acontecimentos soubemos da sua existência e por isso viemos atrás de você, "
+   					+ "nós achamos que a única forma de salvar a Bryanna é você refazer o feitiço que a assola noite e dia!", TimeUnit.MILLISECONDS, temp_dialog);
+   			Digita("\n\n Grannus:  Como assim feitiço, como eu fiz isso? Como eu vou desfazê-lo?",  TimeUnit.MILLISECONDS, temp_dialog);
+   			Digita("\n\n - " + nome_aventureiro + " Vamos embora dessa região, quando chegarmos a gente estuda uma forma de salvá-la", TimeUnit.MILLISECONDS, temp_dialog);
+   			Digita("\n\n Grannus:  Meu deus, espero que me perdoem! será que as pessoas vão entender?",  TimeUnit.MILLISECONDS, temp_dialog);
+   			Digita("\n\n - " + nome_aventureiro + "Espero que sim, isso não foi culpa sua!", TimeUnit.MILLISECONDS, temp_dialog);
+   			Digita("\n\n Grannus:  Eu fiquei quanto tempo com essa magia? o que eu fiz de ruim para a família do mago?", TimeUnit.MILLISECONDS, temp_dialog);
+   			Digita("\n\n - " + nome_aventureiro + " Essa magia está dentro de você a muito tempo, aconteceu diversas coisas desde que a magia entrou em seu corpo, você matou o mestre e antes de ir embora amaldiçoou a Bryanna com um feitiço maligno que está destruindo-a por dentro e fora, achamos que você não estava mais vivo, porém com vários acontecimentos soubemos da sua existência e por isso viemos atrás de você, "
+   					+ "nós achamos que a única forma de salvar a Bryanna é você refazer o feitiço que a assola noite e dia!", TimeUnit.MILLISECONDS, temp_dialog);
+   			Digita("\n\n - " + nome_aventureiro + "Vamos embora dessa região, quando chegarmos a gente estuda uma forma de salvá-la", TimeUnit.MILLISECONDS, temp_dialog);
+   		    break;
+   		}else {
+   			System.out.println("Você não digitou uma resposta valída!");
+   		}
+   		
+   	} while(resp3 != 1 || resp3 != 2);
+    
+    
+	int resp4;
+	
+	do {
+		 Digita("\n\n 1} Chamar Hipogrifo para voltar para casa", TimeUnit.MILLISECONDS, temp_dialog);
+		 resp4 = entrada.nextInt();
+		 if(resp4 != 1) {
+			 System.out.println("Você não digitou uma resposta valída!");
+		 }
+	}while( resp4 != 1);
+ 
+        Digita("\n\n - " + nome_aventureiro + "Antes disso, preciso encontrar as coordenadas!", TimeUnit.MILLISECONDS, temp_dialog);
+        	
+		System.out.println("\n");
+		
+		
+		boolean acertou = false;
+		int contador = 0;
+		List alternativas = new ArrayList();
+		alternativas.add("-3,0"); // resposta correta
+		alternativas.add("3,0");
+		alternativas.add("2,5");
+		alternativas.add("-2,5");
+		alternativas.add("0,5");
+		do {
+			Collections.shuffle(alternativas);
+			System.out.println("\n\n Qual é a soma das coordenadas do vértice de uma função do segundo grau definida por f(x) = 2x2 + 10x + 12?");
+			System.out.println("a) " + alternativas.get(0));
+			System.out.println("b) " + alternativas.get(1));
+			System.out.println("c) " + alternativas.get(2));
+			System.out.println("d) " + alternativas.get(3));
+			System.out.println("e) " + alternativas.get(4));
+			System.out.print("Escolha uma alternativa: ");
+			String resposta = entrada.next();
+			switch (resposta) {
+			case "a":
+			case "A":
+				if (alternativas.get(0).equals("-3,0")) {
+					System.out.println("Resposta correta!");
+					acertou = true;
+					contador++;
+				} else {
+					System.out.println("Resposta incorreta!");
+					contador++;
+				}
+				break;
+			case "b":
+			case "B":
+				if (alternativas.get(1).equals("-3,0")) {
+					System.out.println("Resposta correta!");
+					acertou = true;
+					contador++;
+				} else {
+					System.out.println("Resposta incorreta!");
+					contador++;
+				}
+				break;
+			case "c":
+			case "C":
+				if (alternativas.get(2).equals("-3,0")) {
+					System.out.println("Resposta correta!");
+					acertou = true;
+					contador++;
+				} else {
+					System.out.println("Resposta incorreta!");
+					contador++;
+				}
+				break;
+			case "d":
+			case "D":
+				if (alternativas.get(3).equals("-3,0")) {
+					System.out.println("Resposta correta!");
+					acertou = true;
+					contador++;
+				} else {
+					System.out.println("Resposta incorreta!");
+					contador++;
+				}
+				break;
+			case "e":
+			case "E":
+				if (alternativas.get(4).equals("3,0")) {
+					System.out.println("Resposta correta!");
+					acertou = true;
+					contador++;
+				} else {
+					System.out.println("Resposta incorreta!");
+					contador++;
+				}
+				break;
+			default:
+				System.out.println("Escolha inválida!");
+			}
+		} while (!acertou & contador < 3);
+		
+		if (acertou) {
+			System.out.println("Você acertou com " + contador + " tentativa!");
+			} else {
+			System.err.println("Você errou 3 vezes seguidas!");
+	}
+    
+    
+    int resp5 = 0;
+	do {
+		Digita("\n\n - " + nome_aventureiro + " Conheça meu grande amigo que conheci nessa jornada até aqui, esse é o hipogrifo mágico,"
+				+ " ele pode nos levar para casa de uma forma mais rápida! Mas cuidado, para montar nele é preciso fazer uma reverência.", TimeUnit.MILLISECONDS, temp_dialog);
+		Digita("\n\n  Grannus:  O que, como? esse bixo é mágico e muito raro! Sempre tive vontade de andar em um, como devo fazer a reverência? dessa forma?",  TimeUnit.MILLISECONDS, temp_dialog);
+		Digita("\n\n  Grannus:  Ouuuu ouuu, ele está me cheirando!",  TimeUnit.MILLISECONDS, temp_dialog);
+		Digita("\n\n - " + nome_aventureiro + " Isso mesmo, parece que ele gostou de você! agora pode subir vamos embora!", TimeUnit.MILLISECONDS, temp_dialog);
+		Digita("\n\n - " + nome_aventureiro + " [...] então Grannus resumindo nós precisamos que você liberte minha irmã da maldição que você lançou nela, "
+				+ "meu irmão Solveig está com ela agora tentando encontrar um jeito de libertá-la.", TimeUnit.MILLISECONDS, temp_dialog);
+		Digita("\n\n  Grannus:  Meu deus… eu não consigo acreditar que fiz isso! Eu cuidei daquela menina como uma irmã!",  TimeUnit.MILLISECONDS, temp_dialog);
+		Digita("\n\n - " + nome_aventureiro + " Não se culpe meu amigo, nós sabemos como Centrion era poderoso!", TimeUnit.MILLISECONDS, temp_dialog);
+		Digita("\n\n  Grannus:  Eu sinto muito…",  TimeUnit.MILLISECONDS, temp_dialog);
+		Digita("\n\n - " + nome_aventureiro + " 1} Você vai poder se desculpar quando salvar a minha irmã!” ou “2} Se não salvarmos ela hoje, ela morrerá a meia noite.", TimeUnit.MILLISECONDS, temp_dialog);
+		
+		System.out.println("\n");
+		resp5 = entrada.nextInt();
+		
+		if(resp5 == 1 ) {
+		Digita("\n\n - " + nome_aventureiro + " Já estou vendo a casa, vamos lá garoto mais rápido!", TimeUnit.MILLISECONDS, temp_dialog);
+		 
+		}else if( resp5 == 2) {
+			Digita("\n\n  Doodou: Chegamos! Estamos em casa!",  TimeUnit.MILLISECONDS, temp_dialog);
+		}else {
+			System.out.println("Você não digitou uma resposta valída!");
+		}
+		
+		Digita("\n\n - " + nome_aventureiro + " 1} Chamar Solveing ou 2} Entrar na casa", TimeUnit.MILLISECONDS, temp_dialog);
+		if(resp5 == 1) {
+			Digita("\n\n - " + nome_aventureiro + " Solveing chegamos!! Está em casa?", TimeUnit.MILLISECONDS, temp_dialog);
+			Digita("\n\n  Solveing: Graças a Merlim vocês voltaram!!",  TimeUnit.MILLISECONDS, temp_dialog);
+			Digita("\n\n - " + nome_aventureiro + " Estamos aqui meu querido irmão e trago boas notícias!", TimeUnit.MILLISECONDS, temp_dialog);
+			Digita("\n\n  Solveing: Vocês conseguiram?",  TimeUnit.MILLISECONDS, temp_dialog);
+			Digita("\n\n Grannus: Olá Solveing, há quanto tempo", TimeUnit.MILLISECONDS, temp_dialog);
+			Digita("\n\n  Solveing: Ele ainda é o Grannus que matou nosso pai ?",  TimeUnit.MILLISECONDS, temp_dialog);
+			Digita("\n\n - " + nome_aventureiro + " Não Solveing, nós revertemos o feitiço que estava nele.", TimeUnit.MILLISECONDS, temp_dialog);
+			
+			
+		}else if(resp5 == 2) {
+			Digita("\n\n - " + nome_aventureiro + " Está tudo muito calmo, vamos entrar...", TimeUnit.MILLISECONDS, temp_dialog);
+			Digita("\n\n  Solveing: Força Bryanna, preciso que fique forte! tentarei uma nova magia..\n\n Espera ai que barulho é esse? \n\n Graças a Merlim vocês voltaram!!",  TimeUnit.MILLISECONDS, temp_dialog);
+			Digita("\n\n - " + nome_aventureiro + " Estamos aqui meu querido irmão e trago boas notícias!", TimeUnit.MILLISECONDS, temp_dialog);
+			Digita("\n\n  Solveing: Vocês conseguiram?",  TimeUnit.MILLISECONDS, temp_dialog);
+			Digita("\n\n  Grannus: Olá Solveing, a quanto tempo!",  TimeUnit.MILLISECONDS, temp_dialog);
+			Digita("\n\n  Solveing: Ele ainda é o Grannus que matou nosso pai?",  TimeUnit.MILLISECONDS, temp_dialog);
+			Digita("\n\n - " + nome_aventureiro + " Não Solveing, nós revertemos o feitiço que estava nele.", TimeUnit.MILLISECONDS, temp_dialog);
+			
+			Digita("\n\n - " + nome_aventureiro + " Está tudo muito calmo, vamos entrar...", TimeUnit.MILLISECONDS, temp_dialog);
+			Digita("\n\n   Solveing: Força Bryanna, preciso que fique forte! tentarei uma nova magia.. \n\n Espera ai... que barulho é esse ? \n\n Graças a Merlim vocês voltaram!!",  TimeUnit.MILLISECONDS, temp_dialog);
+			Digita("\n\n - " + nome_aventureiro + " Estamos aqui meu querido irmão e trago boas notícias", TimeUnit.MILLISECONDS, temp_dialog);
+			Digita("\n\n  Solveing: Vocês conseguiram?",  TimeUnit.MILLISECONDS, temp_dialog);
+			Digita("\n\n   Grannus: Olá Solveing, há quanto tempo!",  TimeUnit.MILLISECONDS, temp_dialog);
+			Digita("\n\n   Solveing: Ele ainda é o Grannus que matou nosso pai ?",  TimeUnit.MILLISECONDS, temp_dialog);
+			Digita("\n\n - " + nome_aventureiro + " Não Solveing, nós revertemos o feitiço que estava nele.", TimeUnit.MILLISECONDS, temp_dialog);
+			
+			Digita("\n\n - " + nome_aventureiro + " 1} Como está nossa irmã ? ou 2} Vamos logo com isso, estamos perdendo tempo!", TimeUnit.MILLISECONDS, temp_dialog);
+			resp5 = entrada.nextInt();
+			//rafa
+			Digita("\n\n - " + nome_aventureiro + " Estamos aqui meu querido irmão e trago boas notícias!", TimeUnit.MILLISECONDS, temp_dialog);
+			Digita("\n\n  Solveing: Vocês conseguiram?",  TimeUnit.MILLISECONDS, temp_dialog);
+			Digita("\n\n - " + nome_aventureiro + " Estamos aqui meu querido irmão e trago boas notícias!", TimeUnit.MILLISECONDS, temp_dialog);
+			Digita("\n\n  Solveing: Vocês conseguiram?",  TimeUnit.MILLISECONDS, temp_dialog);
+			Digita("\n\n - " + nome_aventureiro + " Estamos aqui meu querido irmão e trago boas notícias!", TimeUnit.MILLISECONDS, temp_dialog);
+			Digita("\n\n  Solveing: Vocês conseguiram?",  TimeUnit.MILLISECONDS, temp_dialog);
+			
+			
+			
+			
+			break;
+		}else {
+			System.out.println("Você não digitou uma resposta valída!");
+		}
+		
+	} while(resp != 1 || resp != 2);
+    }
 //================================================================ FIM DO CÓDIGO ==============================================================================================================================	
 	public static void Digita(String mensagem, TimeUnit unit, long tempo_mensagem) throws InterruptedException {
 		for (char caractere : mensagem.toCharArray()) {
