@@ -6,7 +6,6 @@ import java.util.List;
 
 class Jogo {
 	static String nome_aventureiro;
-	int[] v = new int[3];
 
 	//// static int temp_dialog = 60, temp_narrativa = 130, temp_transicao = 20;
 	//// //Tempo correto do game
@@ -281,16 +280,13 @@ class Jogo {
 	}
 
 //================================================================ CAPITULO 2 ==============================================================================================================================
-	static int capitulo_2() throws Exception {
+	static void capitulo_2() throws Exception {
 
 		Scanner entrada = new Scanner(System.in);
 
 		Digita("\n\n Ao completar 17 anos, Bryanna começa a receber sinais de que seu tempo de vida está acabando. Seu meio irmão "
-				+ nome_aventureiro
-				+ " percebe esses acontecimentos e conta para seu irmão mais velho. \n Solveig desesperado para salvar sua irmã busca soluções em livros antigos de seu pai para que talvez encontre algo que possa ajudá-los enquanto o jogador vai em busca da cura que está com Grannus.",
-				TimeUnit.MILLISECONDS, temp_dialog);
-		Digita("\n\n - Solveig: Meu irmão, nós não temos escolha. Você precisa ir atrás do Grannus e descobrir um jeito de curar Bryanna", 
-				TimeUnit.MILLISECONDS, temp_dialog);
+				+ nome_aventureiro + " percebe esses acontecimentos e conta para seu irmão mais velho. \n Solveig desesperado para salvar sua irmã busca soluções em livros antigos de seu pai para que talvez encontre algo que possa ajudá-los enquanto o jogador vai em busca da cura que está com Grannus.", TimeUnit.MILLISECONDS, temp_dialog);
+		Digita("\n\n - Solveig: Meu irmão, nós não temos escolha. Você precisa ir atrás do Grannus e descobrir um jeito de curar Bryanna", TimeUnit.MILLISECONDS, temp_dialog);
 		
 		int resp;
 		do {
@@ -311,7 +307,7 @@ class Jogo {
 				} else {
 					System.out.println("Você não digitou uma resposta valída!");
 				}
-	         
+		
 		}while(resp != 1 || resp != 2);
 		
 		Digita("\n\n - Solveig: Eu estou buscando alguma fórmula ou feitiço nos livros do nosso Pai para tentar retardar o tempo dela para que você consiga achar o Grannus, mas até hoje nada do que eu tentei funcionou..", 
@@ -630,12 +626,15 @@ class Jogo {
 
 						if (acertou) {
 							System.out.println("Você acertou com " + contador + " tentativa!");
+							Digita("\n\n - " + nome_aventureiro + ": Acabou eu ganhei!!! Agora é sua vez! Eu quero que me diga tudo que sabe sobre o Grannus!", 
+									TimeUnit.MILLISECONDS, temp_transicao);
 						} else {
 							System.err.println("Você errou 3 vezes seguidas!");
+							Digita("\n\n - Doodou: Você não é tão bom assim, mas vou quebrar seu galho!", 
+									TimeUnit.MILLISECONDS, temp_transicao);
 							numTentativas = 2;
 						}
-						Digita("\n\n - " + nome_aventureiro + ": Acabou eu ganhei!!! Agora é sua vez! Eu quero que me diga tudo que sabe sobre o Grannus!", 
-								TimeUnit.MILLISECONDS, temp_transicao);
+						
 						Digita("\n\n - Enganador: Ora ora o que temos aqui, então você é o filho do mago? Não estou surpreso", 
 								TimeUnit.MILLISECONDS, temp_transicao);
 						Digita("\n\n - " + nome_aventureiro + ": Não me enrole!! EU QUERO VERDADE!!!!", 
@@ -678,7 +677,7 @@ class Jogo {
 								System.out.println("\n");
 								resp10 = entrada.nextInt();
 								
-								if (resp10 == 1) {
+								 if (resp10 == 1) {
 									Digita("\n\n - " + nome_aventureiro + ": Obrigado nobre Enganador, eu aceito!", 
 											TimeUnit.MILLISECONDS, temp_transicao);
 									break;
@@ -738,8 +737,8 @@ class Jogo {
 						Digita("\n\n - Doodou: Não é à toa que eu sempre ajudava seu pai", 
 								TimeUnit.MILLISECONDS, temp_transicao);
 									
-						            int resp12;
-									do { 
+				int resp12;
+				do { 
 						Digita("\n\n - " + nome_aventureiro + " [1] De onde você veio e como aprendeu tanta coisa? [2] Você é muito egocêntrico e se acha muito!", TimeUnit.MILLISECONDS, temp_transicao);
 						System.out.println("\n");
 						resp12 = entrada.nextInt();
@@ -978,12 +977,12 @@ class Jogo {
 												} while (resp17 != 1 || resp17 != 2); 
 													
 												
-												int resp18;
-												do {
+					    int resp18;
+						do {
 													
-													Digita("\n\n - " + nome_aventureiro + "[1] Vamos com cuidado, não confio neles! [2] Melhor já pegar a espada!",TimeUnit.MILLISECONDS, temp_transicao); 
-													System.out.println("\n");
-													resp18 = entrada.nextInt();
+			         Digita("\n\n - " + nome_aventureiro + "[1] Vamos com cuidado, não confio neles! [2] Melhor já pegar a espada!",TimeUnit.MILLISECONDS, temp_transicao); 
+			         System.out.println("\n");
+			         resp18 = entrada.nextInt();
 										 
 									if (resp18 == 1) {
 									Digita("\n\n - " + nome_aventureiro + ": Vamos com cuidado, não confio neles!", TimeUnit.MILLISECONDS, temp_transicao); 
@@ -1011,7 +1010,6 @@ class Jogo {
 										if (resp19 == 1) {
 											Digita("\n\n - " + nome_aventureiro + ": Eu sou" + nome_aventureiro + " e esse é o Doodou, viemos em paz! Estamos indo em direção ao norte atrás do Grannus!", TimeUnit.MILLISECONDS, temp_transicao); 
 											Digita("\n\n - Rei dos Anões: Grannnus? O mago? Não diga esse nome novamente! runn", TimeUnit.MILLISECONDS, temp_transicao);
-											break;
 											
 											int resp20;
 											Digita("\n\n - " + nome_aventureiro + "[1] Grannus matou o meu pai! Estou atrás dele para matá-lo, você sabe onde posso encontrá-lo? [2] Deixe-nos entrar, não queremos problemas!", TimeUnit.MILLISECONDS, temp_transicao);
@@ -1099,6 +1097,9 @@ class Jogo {
 													Digita("\n\n - " + nome_aventureiro + ": Tá bom e o que eu tenho com isso ?", TimeUnit.MILLISECONDS, temp_transicao);
 													
 													break;
+												} else {
+													System.out.println("Você não digitou uma resposta valída!"); 		
+												}
 												} while (resp22 != 1 || resp22 != 2);
 												
 												
@@ -1191,7 +1192,8 @@ class Jogo {
 													System.out.println("Você acertou com " + contador2 + " tentativa!");
 												} else {
 													System.err.println("Você errou 3 vezes seguidas!");
-													System.err.println("GAME OVER!!!!");
+													Digita("\n\n - " + nome_aventureiro + ": ", TimeUnit.MILLISECONDS, temp_transicao);
+													
 												}
 								
 														
@@ -1361,7 +1363,7 @@ class Jogo {
 											} while (resp29 != 1);
 
 													Digita("\n\n - Doodou: Isso é ótimo, vamos chegar assim que o sol se pôr!", TimeUnit.MILLISECONDS, temp_dialog);
-													Digita("\n\n - " + nome_aventureiro + ": Vamos lá garoto nos leve nessa direção!"	, TimeUnit.MILLISECONDS, temp_dialog);
+													Digita("\n\n - " + nome_aventureiro + ": Vamos lá garoto nos leve nessa direção!", TimeUnit.MILLISECONDS, temp_dialog);
 													
 													int resp30;
 													do {
@@ -1450,21 +1452,14 @@ class Jogo {
 															
 														Digita("\n\n - Doodou: Muito bem, agora é melhor você descansar! Eu vou ficar de guarda, não estamos seguros aqui.",TimeUnit.MILLISECONDS, temp_dialog);
 														
-														
-												
-										
-		
-		
-		
-		
-												
-		
-											}
-											capitulo_3(numTentativas);
+	
+		capitulo_3(numTentativas); 
+
 	}
+	
 
 //================================================================ CAPITULO 3 ==============================================================================================================================
-	static int capitulo_3(int numTentativas1) throws Exception {
+	static void capitulo_3(int numTentativas1) throws Exception {
 
 		Scanner entrada = new Scanner(System.in);
 		int numTentativas = numTentativas1;
@@ -1851,14 +1846,14 @@ class Jogo {
 			System.err.println("Você errou 3 vezes seguidas!");
 			final_2(numTentativas);
 		}
-		return numTentativas1;
+		
 	}
 
 //================================================================ Final 1 ==============================================================================================================================	
 
-	static int final_1(int numTentativas2) throws Exception {
+	static void final_1(int numTentativas1) throws Exception {
 		Scanner entrada = new Scanner(System.in);
-
+		int numTentativas = numTentativas1;
 		Digita("\n\n  Doodou: Boaaa " + nome_aventureiro + "! Agora, segure ele até o feitiço fazer efeito!",
 				TimeUnit.MILLISECONDS, temp_dialog);
 
@@ -2654,15 +2649,15 @@ class Jogo {
 				TimeUnit.MILLISECONDS, temp_dialog);
 		Digita("\n\n  ...:::>>>FIM<<<:::...", TimeUnit.MILLISECONDS, temp_dialog);
 
-		return numTentativas2;
-		// System.exit(0);
+		System.exit(0);
 	}
 
 //================================================================ Final 2 ==============================================================================================================================	
 
-	static int final_2(int numTentativas3) throws Exception {
+	static void final_2(int numTentativas1) throws Exception {
 		Scanner entrada = new Scanner(System.in);
-
+		int numTentativas = numTentativas1;
+		
 		Digita("\n\n Doodou: NÃOOOOOOOO, VOCÊ ERROU!!!!!!!", TimeUnit.MILLISECONDS, temp_dialog);
 		Digita("\n\n Grannus: HAHAHAHAHAHA, VOCÊ CONTAVA COM A AJUDA DELE POBRE ALMA!!!!", TimeUnit.MILLISECONDS,
 				temp_dialog);
@@ -3229,7 +3224,6 @@ class Jogo {
 				TimeUnit.MILLISECONDS, temp_dialog);
 
 		Digita("\n\n  ...:::>>>FIM<<<:::...", TimeUnit.MILLISECONDS, temp_dialog);
-		return numTentativas3;
 		// System.exit(0);
 	}
 
