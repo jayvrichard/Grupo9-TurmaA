@@ -245,7 +245,7 @@ class Jogo {
 		do {
 
 			Digita("\n\n - " + nome_aventureiro
-					+ " [1] Eu quero proteger nossa vila do homem que matou nosso Pai!! ou [2] Eu não sei se conseguirei ser bom como você meu irmão",
+					+ ": [1] Eu quero proteger nossa vila do homem que matou nosso Pai!! ou [2] Eu não sei se conseguirei ser bom como você meu irmão",
 					TimeUnit.MILLISECONDS, temp_dialog);
 
 			System.out.println("\n");
@@ -291,17 +291,17 @@ class Jogo {
 		int resp;
 		do {
          	
-				Digita("\n\n - " + nome_aventureiro + "1) Eu irei e trarei a cura junto comigo!! ou 2)Bryanna precisa aguentar por mais tempo",
+				Digita("\n\n - " + nome_aventureiro + ": [1] Eu irei e trarei a cura junto comigo!! [2] Bryanna precisa aguentar por mais tempo",
 						TimeUnit.MILLISECONDS, temp_dialog);
 				System.out.println("\n");
 				resp = entrada.nextInt();
 				
 				if (resp == 1) {
-					Digita("\n\n - " + nome_aventureiro + "Eu irei e trarei a cura junto comigo!!", 
+					Digita("\n\n - " + nome_aventureiro + ": Eu irei e trarei a cura junto comigo!!", 
 							TimeUnit.MILLISECONDS, temp_dialog);
 					break;
 				} else if (resp == 2) {
-					Digita("\n\n - " + nome_aventureiro + "Bryanna precisa aguentar por mais tempo", 
+					Digita("\n\n - " + nome_aventureiro + ": Bryanna precisa aguentar por mais tempo", 
 							TimeUnit.MILLISECONDS, temp_dialog);
 	                break;
 				} else {
@@ -313,7 +313,7 @@ class Jogo {
 		Digita("\n\n - Solveig: Eu estou buscando alguma fórmula ou feitiço nos livros do nosso Pai para tentar retardar o tempo dela para que você consiga achar o Grannus, mas até hoje nada do que eu tentei funcionou..", 
 				TimeUnit.MILLISECONDS, temp_dialog);
 		Digita("\n\n - " + nome_aventureiro + ": Você já sabia que esse dia chegaria, não é mesmo?",TimeUnit.MILLISECONDS, temp_dialog);
-		Digita("\n\n - Solveig:Eu cometi erros, meu querido irmão, deveria ter contado sobre essa maldição para vocês, mas não queria que isso mudasse a vida dela e nem a sua!",
+		Digita("\n\n - Solveig: Eu cometi erros, meu querido irmão, deveria ter contado sobre essa maldição para vocês, mas não queria que isso mudasse a vida dela e nem a sua!",
 				TimeUnit.MILLISECONDS, temp_dialog);	
 		Digita("\n\n - " + nome_aventureiro + ": Então todos aqueles livros e todos aqueles treinos era pra quando esse dia chegasse…", 
 				TimeUnit.MILLISECONDS, temp_dialog);
@@ -324,7 +324,7 @@ class Jogo {
 		int resp1;
 		do {
 			
-			Digita("\n\n - " + nome_aventureiro + " [1] Você deveria ter nos contado!! [2] Você sempre cuidou de nós e eu sou grato por isso!!", 
+			Digita("\n\n - " + nome_aventureiro + ": [1] Você deveria ter nos contado!! [2] Você sempre cuidou de nós e eu sou grato por isso!!", 
 					TimeUnit.MILLISECONDS, temp_dialog);
 			System.out.println("\n");
 			resp1 = entrada.nextInt();
@@ -345,7 +345,7 @@ class Jogo {
 		int resp2;
 		do {
 			
-			Digita("\n\n - " + nome_aventureiro + " [1] Obrigado Solveig! [2]Agora é melhor que eu parta antes do anoitecer, será uma longa jornada!", 
+			Digita("\n\n - " + nome_aventureiro + ": [1] Obrigado Solveig! [2] Agora é melhor que eu parta antes do anoitecer, será uma longa jornada!", 
 					TimeUnit.MILLISECONDS, temp_dialog);
 			System.out.println("\n");
 			resp2 = entrada.nextInt();
@@ -378,7 +378,7 @@ class Jogo {
 		int resp3;
 		do {
 			
-			Digita("\n\n - " + nome_aventureiro + "[1] Veja bem como fala da minha irmã Doodou se quiser voltar pra casa vivo! [2] Escute aqui, não é só porque você era importante para meu pai que pode falar assim da minha irmã!", 
+			Digita("\n\n - " + nome_aventureiro + ": [1] Veja bem como fala da minha irmã Doodou se quiser voltar pra casa vivo! [2] Escute aqui, não é só porque você era importante para meu pai que pode falar assim da minha irmã!", 
 					TimeUnit.MILLISECONDS, temp_transicao);
 			System.out.println("\n");
 			resp3 = entrada.nextInt();
@@ -396,13 +396,13 @@ class Jogo {
 			}
 		}while(resp3 != 1 || resp3 != 2);
 		
-		Digita("\n\n - Doodou: Ei ei calma ai" + nome_aventureiro + " Eu estava apenas brincando. Mas eu vou ficar quieto, não é uma boa ficar conversando, não chamam essa floresta de Floresta do Enganador atoa!", 
+		Digita("\n\n - Doodou: Ei ei calma ai" + nome_aventureiro + "! Eu estava apenas brincando. Mas eu vou ficar quieto, não é uma boa ficar conversando, não chamam essa floresta de Floresta do Enganador atoa!", 
 				TimeUnit.MILLISECONDS, temp_transicao);
 		
 		int resp4;
 		do {
 			
-			Digita("\n\n - " + nome_aventureiro + "[1] Floresta do Enganador? O que diabos quer dizer com isso. [2] Quem é esse tal de Enganador?", 
+			Digita("\n\n - " + nome_aventureiro + ": [1] Floresta do Enganador? O que diabos quer dizer com isso. [2] Quem é esse tal de Enganador?", 
 					TimeUnit.MILLISECONDS, temp_transicao);
 			System.out.println("\n");
 			resp4 = entrada.nextInt();
@@ -432,7 +432,7 @@ class Jogo {
 		int resp5;
 		do {
 			
-			Digita("\n\n - " + nome_aventureiro + " [1] Vamos lá!! Eu não gostei disso, mas podemos encontrar pistas! [2] É uma péssima ideia mas acho que devemos ir lá!", 
+			Digita("\n\n - " + nome_aventureiro + ": [1] Vamos lá!! Eu não gostei disso, mas podemos encontrar pistas! [2] É uma péssima ideia mas acho que devemos ir lá!", 
 					TimeUnit.MILLISECONDS, temp_transicao);
 			System.out.println("\n");
 			resp5 = entrada.nextInt();
@@ -451,7 +451,7 @@ class Jogo {
 			}
 			}while(resp5 != 1 || resp5 != 2);
 		
-			Digita("\n\n -Doodou: Você que manda" + nome_aventureiro + " mas tenha cuidado não quero morrer hoje.", 
+			Digita("\n\n - Doodou: Você que manda " + nome_aventureiro + " mas tenha cuidado não quero morrer hoje.", 
 					TimeUnit.MILLISECONDS, temp_transicao);
 			
 			Digita("\n\n - TOC-TOC a porta se abre.",
@@ -460,7 +460,7 @@ class Jogo {
 			int resp6;
 			do {
 				
-				Digita("\n\n - " + nome_aventureiro + " [1] Olá, tem alguém aqui? [2] EEIII SEJA QUEM FOR É MELHOR SAIR!!!!", 
+				Digita("\n\n - " + nome_aventureiro + ": [1] Olá, tem alguém aqui? [2] EEIII SEJA QUEM FOR É MELHOR SAIR!!!!", 
 						TimeUnit.MILLISECONDS, temp_transicao);
 				System.out.println("\n");
 				resp6 = entrada.nextInt();
@@ -480,7 +480,7 @@ class Jogo {
 			
 				Digita("\n\n - Doodou: Ei para de gritar podemos morrer sabia!?", 
 						TimeUnit.MILLISECONDS, temp_transicao);
-				Digita("\n\n - Enganador: Vocês realmente não sabem onde se meteram, não é mesmo?" + "Bem-vindos a minha casa, se acomodam, pois, vocês jamais sairão daqui! UAHAHAHA!!", 
+				Digita("\n\n - Enganador: Vocês realmente não sabem onde se meteram, não é mesmo?" + " Bem-vindos a minha casa, se acomodam, pois, vocês jamais sairão daqui! UAHAHAHA!!", 
 						TimeUnit.MILLISECONDS, temp_transicao);
 				Digita("\n\n - " + nome_aventureiro + ": O que ?? Quem está aí?", 
 						TimeUnit.MILLISECONDS, temp_transicao);
@@ -494,7 +494,7 @@ class Jogo {
 				int resp7;
 				do {
 					
-					Digita("\n\n - " + nome_aventureiro + " [1] Como ousa, eu ainda não estou morto!! [2] Quem vai morrer aqui é você!!", 
+					Digita("\n\n - " + nome_aventureiro + ": [1] Como ousa, eu ainda não estou morto!! [2] Quem vai morrer aqui é você!!", 
 							TimeUnit.MILLISECONDS, temp_transicao);
 					System.out.println("\n");
 					resp7 = entrada.nextInt();
@@ -521,7 +521,7 @@ class Jogo {
 					int resp8;
 					do {
 						
-						Digita("\n\n - " + nome_aventureiro + "[1] Vamos terminar logo com isso! [2] Eu aceito o desafio, mas quero uma coisa em troca!", 
+						Digita("\n\n - " + nome_aventureiro + ": [1] Vamos terminar logo com isso! [2] Eu aceito o desafio, mas quero uma coisa em troca!", 
 								TimeUnit.MILLISECONDS, temp_transicao);	
 						System.out.println("\n");
 						resp8 = entrada.nextInt();
@@ -645,7 +645,7 @@ class Jogo {
 						int resp9;
 						do {
 							
-							Digita("\n\n - " + nome_aventureiro + " [1] Eu vou encontrá-lo custe o que custar! [2] Não tenho escolha, minha irmã depende disso!", 
+							Digita("\n\n - " + nome_aventureiro + ": [1] Eu vou encontrá-lo custe o que custar! [2] Não tenho escolha, minha irmã depende disso!", 
 									TimeUnit.MILLISECONDS, temp_transicao);
 							System.out.println("\n");
 							resp9 = entrada.nextInt();
@@ -664,7 +664,7 @@ class Jogo {
 							}while(resp9 != 1 || resp9 != 2);
 							
 							
-							Digita("\n\n - Enganador: Muito bem Jogador, você parece estar determinado e ter uma boa causa." + "Vou te ajudá-lo mais uma vez, leve minha espada, ela foi forjada por anões nas Montanhas de Elso, feita de titânio encontrado naquela montanha.", 
+							Digita("\n\n - Enganador: Muito bem Jogador, você parece estar determinado e ter uma boa causa." + " Vou te ajudá-lo mais uma vez, leve minha espada, ela foi forjada por anões nas Montanhas de Elso, feita de titânio encontrado naquela montanha.", 
 									TimeUnit.MILLISECONDS, temp_transicao);
 							Digita("\n\n - Doodou: Ora ora pra quem queria nos matar até que nos ajudou bastante não é mesmo!", 
 									TimeUnit.MILLISECONDS, temp_transicao);
@@ -672,7 +672,7 @@ class Jogo {
 							int resp10;
 							do {
 								
-								Digita("\n\n - " + nome_aventureiro + " [1] Obrigado nobre enganador, eu aceito! [2] Eu não confio em você, prefiro continuar com a minha espada.", 
+								Digita("\n\n - " + nome_aventureiro + ": [1] Obrigado nobre enganador, eu aceito! [2] Eu não confio em você, prefiro continuar com a minha espada.", 
 										TimeUnit.MILLISECONDS, temp_transicao);
 								System.out.println("\n");
 								resp10 = entrada.nextInt();
@@ -711,7 +711,7 @@ class Jogo {
 						int resp11;
 						do {
 									
-						Digita("\n\n - " + nome_aventureiro + " [1] O que é um Hipogrifo? [2] Não quero saber, preciso ir logo para salvar minha irmã!", 
+						Digita("\n\n - " + nome_aventureiro + ": [1] O que é um Hipogrifo? [2] Não quero saber, preciso ir logo para salvar minha irmã!", 
 								TimeUnit.MILLISECONDS, temp_transicao);
 						System.out.println("\n");
 							resp11 = entrada.nextInt();
@@ -739,7 +739,7 @@ class Jogo {
 									
 				int resp12;
 				do { 
-						Digita("\n\n - " + nome_aventureiro + " [1] De onde você veio e como aprendeu tanta coisa? [2] Você é muito egocêntrico e se acha muito!", TimeUnit.MILLISECONDS, temp_transicao);
+						Digita("\n\n - " + nome_aventureiro + ": [1] De onde você veio e como aprendeu tanta coisa? [2] Você é muito egocêntrico e se acha muito!", TimeUnit.MILLISECONDS, temp_transicao);
 						System.out.println("\n");
 						resp12 = entrada.nextInt();
 									
@@ -766,7 +766,7 @@ class Jogo {
 							int resp13;			 
 							do {
 								
-								 Digita("\n\n - " + nome_aventureiro + "[1] Meu deus o que é isso? [2] É melhor essa espada ser bem afiada!", 
+								 Digita("\n\n - " + nome_aventureiro + ": [1] Meu deus o que é isso? [2] É melhor essa espada ser bem afiada!", 
 										 TimeUnit.MILLISECONDS, temp_transicao);
 								 System.out.println("\n");
 									resp13 = entrada.nextInt();
@@ -793,7 +793,7 @@ class Jogo {
 										 int resp14;
 										 do {
 												
-											 Digita("\n\n - " + nome_aventureiro + "[1] Ajoelhar-se e fazer a reverência. [2] Pegar a espada.", TimeUnit.MILLISECONDS, temp_dialog);		 
+											 Digita("\n\n - " + nome_aventureiro + ": [1] Ajoelhar-se e fazer a reverência. [2] Pegar a espada.", TimeUnit.MILLISECONDS, temp_dialog);		 
 												System.out.println("\n");
 												resp14 = entrada.nextInt();
 										
@@ -816,7 +816,7 @@ class Jogo {
 												int resp15;
 												 do {
 														
-													 Digita("\n\n - " + nome_aventureiro + "[1] Arrebentar corrente.", TimeUnit.MILLISECONDS, temp_dialog);		 
+													 Digita("\n\n - " + nome_aventureiro + ": [1] Arrebentar corrente.", TimeUnit.MILLISECONDS, temp_dialog);		 
 														System.out.println("\n");
 														resp15 = entrada.nextInt();
 														if (resp15 == 1) {
@@ -929,7 +929,7 @@ class Jogo {
 											    int resp16;
 											    do {
 											    	
-											    	Digita("\n\n - " + nome_aventureiro + " [1] Usar o Hipogrifo para ir até o topo da montanha. [2] Deixe-o em paz, ele está bem cansado! Vamos andando!!", TimeUnit.MILLISECONDS, temp_transicao);
+											    	Digita("\n\n - " + nome_aventureiro + ": [1] Usar o Hipogrifo para ir até o topo da montanha. [2] Deixe-o em paz, ele está bem cansado! Vamos andando!!", TimeUnit.MILLISECONDS, temp_transicao);
 											    	System.out.println("\n");
 													resp16 = entrada.nextInt();
 													
@@ -958,7 +958,7 @@ class Jogo {
 											int resp17;
 											do {
 										    	
-										    	Digita("\n\n - " + nome_aventureiro + " [1] Vamos garoto, deixe a gente na frente do castelo! [2] Melhor descermos mais afastados, não sabemos quem são eles.", TimeUnit.MILLISECONDS, temp_transicao);
+										    	Digita("\n\n - " + nome_aventureiro + ": [1] Vamos garoto, deixe a gente na frente do castelo! [2] Melhor descermos mais afastados, não sabemos quem são eles.", TimeUnit.MILLISECONDS, temp_transicao);
 										    	System.out.println("\n");
 												resp17 = entrada.nextInt();
 												
@@ -980,7 +980,7 @@ class Jogo {
 					    int resp18;
 						do {
 													
-			         Digita("\n\n - " + nome_aventureiro + "[1] Vamos com cuidado, não confio neles! [2] Melhor já pegar a espada!",TimeUnit.MILLISECONDS, temp_transicao); 
+			         Digita("\n\n - " + nome_aventureiro + ": [1] Vamos com cuidado, não confio neles! [2] Melhor já pegar a espada!",TimeUnit.MILLISECONDS, temp_transicao); 
 			         System.out.println("\n");
 			         resp18 = entrada.nextInt();
 										 
@@ -1003,7 +1003,7 @@ class Jogo {
 									int resp19;
 									do {
 										
-										Digita("\n\n - " + nome_aventureiro + "[1] Eu sou" + nome_aventureiro + " e esse é o Doodou, viemos em paz! Estamos indo em direção ao norte atrás do Grannus! [2] Deixe-nos entrar, não queremos problemas!", TimeUnit.MILLISECONDS, temp_transicao);
+										Digita("\n\n - " + nome_aventureiro + ": [1] Eu sou" + nome_aventureiro + " e esse é o Doodou, viemos em paz! Estamos indo em direção ao norte atrás do Grannus! [2] Deixe-nos entrar, não queremos problemas!", TimeUnit.MILLISECONDS, temp_transicao);
 										System.out.println("\n");
 										resp19 = entrada.nextInt();
 										
@@ -1012,7 +1012,7 @@ class Jogo {
 											Digita("\n\n - Rei dos Anões: Grannnus? O mago? Não diga esse nome novamente! runn", TimeUnit.MILLISECONDS, temp_transicao);
 											
 											int resp20;
-											Digita("\n\n - " + nome_aventureiro + "[1] Grannus matou o meu pai! Estou atrás dele para matá-lo, você sabe onde posso encontrá-lo? [2] Deixe-nos entrar, não queremos problemas!", TimeUnit.MILLISECONDS, temp_transicao);
+											Digita("\n\n - " + nome_aventureiro + ": [1] Grannus matou o meu pai! Estou atrás dele para matá-lo, você sabe onde posso encontrá-lo? [2] Deixe-nos entrar, não queremos problemas!", TimeUnit.MILLISECONDS, temp_transicao);
 											System.out.println("\n");
 											resp20 = entrada.nextInt();
 											
@@ -1057,7 +1057,7 @@ class Jogo {
 											int resp21;
 											do {
 											
-												Digita("\n\n - " + nome_aventureiro + "[1] Ontem quando perguntei sobre Grannus, porque ficou tão bravo? [2] Precisamos de  informações de onde Grannus está vivendo!",TimeUnit.MILLISECONDS, temp_transicao);
+												Digita("\n\n - " + nome_aventureiro + ": [1] Ontem quando perguntei sobre Grannus, porque ficou tão bravo? [2] Precisamos de  informações de onde Grannus está vivendo!",TimeUnit.MILLISECONDS, temp_transicao);
 												System.out.println("\n");
 												resp21 = entrada.nextInt();	
 												
@@ -1085,7 +1085,7 @@ class Jogo {
 											int resp22;
 											do {
 												
-												Digita("\n\n - " + nome_aventureiro + "[1] Então você precisa que eu abra isso ? [2] Tá bom e o que eu tenho com isso ?", TimeUnit.MILLISECONDS, temp_transicao);
+												Digita("\n\n - " + nome_aventureiro + ": [1] Então você precisa que eu abra isso ? [2] Tá bom e o que eu tenho com isso ?", TimeUnit.MILLISECONDS, temp_transicao);
 												System.out.println("\n");
 												resp22 = entrada.nextInt();
 												
@@ -1192,7 +1192,7 @@ class Jogo {
 													System.out.println("Você acertou com " + contador2 + " tentativa!");
 												} else {
 													System.err.println("Você errou 3 vezes seguidas!");
-													Digita("\n\n - " + nome_aventureiro + ": ", TimeUnit.MILLISECONDS, temp_transicao);
+													Digita("\n\n - Doodou: Parece ser mais facíl do que isso! Eu tenho uma chave mestra comigo, use-a!! ", TimeUnit.MILLISECONDS, temp_transicao);
 													
 												}
 								
@@ -1204,7 +1204,7 @@ class Jogo {
 									
 									int resp23;
 									do {
-										Digita("\n\n - " + nome_aventureiro + " [1] Muito obrigado pela informação! [2] Nós manteremos isso em segredo! Obrigado pela ajuda!",
+										Digita("\n\n - " + nome_aventureiro + ": [1] Muito obrigado pela informação! [2] Nós manteremos isso em segredo! Obrigado pela ajuda!",
 												TimeUnit.MILLISECONDS, temp_dialog);
 										
 										System.out.println("\n");
@@ -1228,7 +1228,7 @@ class Jogo {
 											
 											int resp24;
 											do {
-												Digita("\n\n - " + nome_aventureiro +  " [1]	Eu vou vingá-los, acabarei com o Grannus!! [2] É uma bela espada vou continuar com ela se importa.",TimeUnit.MILLISECONDS, temp_dialog);
+												Digita("\n\n - " + nome_aventureiro +  ": [1]	Eu vou vingá-los, acabarei com o Grannus!! [2] É uma bela espada vou continuar com ela se importa.",TimeUnit.MILLISECONDS, temp_dialog);
 												
 												System.out.println("\n");
 												resp24 = entrada.nextInt();
@@ -1255,7 +1255,7 @@ class Jogo {
 											
 											int resp25;
 											do {
-												Digita("\n\n - " + nome_aventureiro +  " [1] Lá vem você com essas ideias malucas [2] Na sua última ideia nós quase caímos de cima de um Hipogrifo!", TimeUnit.MILLISECONDS, temp_dialog);
+												Digita("\n\n - " + nome_aventureiro +  ": [1] Lá vem você com essas ideias malucas [2] Na sua última ideia nós quase caímos de cima de um Hipogrifo!", TimeUnit.MILLISECONDS, temp_dialog);
 												System.out.println("\n");
 												resp25 = entrada.nextInt();
 												
@@ -1275,7 +1275,7 @@ class Jogo {
 											
 											int resp26;
 											do {
-												Digita("\n\n - " + nome_aventureiro +  "[1] Nós devíamos ter pego mais suprimentos com o Rei dos anões [2] Eu estou morrendo de fome.", TimeUnit.MILLISECONDS, temp_dialog);
+												Digita("\n\n - " + nome_aventureiro +  ": [1] Nós devíamos ter pego mais suprimentos com o Rei dos anões [2] Eu estou morrendo de fome.", TimeUnit.MILLISECONDS, temp_dialog);
 												System.out.println("\n");
 												resp26 = entrada.nextInt();
 												
@@ -1297,7 +1297,7 @@ class Jogo {
 											
 											int resp27;
 											do {
-												Digita("\n\n - " + nome_aventureiro +  " [1] Ei o que você está fazendo? [2] Você não tem nada melhor aí pra comer não?", TimeUnit.MILLISECONDS, temp_dialog);
+												Digita("\n\n - " + nome_aventureiro +  ": [1] Ei o que você está fazendo? [2] Você não tem nada melhor aí pra comer não?", TimeUnit.MILLISECONDS, temp_dialog);
 												System.out.println("\n");
 												resp27 = entrada.nextInt();
 												
@@ -1321,7 +1321,7 @@ class Jogo {
 											
 											int resp28;
 											do {
-												Digita("\n\n - " + nome_aventureiro +  "[1] Nós poderíamos conseguir a ajuda deles para derrotar o Grannus, o que acha? [2] Você tem razão vamos procurar esse Hipogrifo!", TimeUnit.MILLISECONDS, temp_dialog);
+												Digita("\n\n - " + nome_aventureiro +  ": [1] Nós poderíamos conseguir a ajuda deles para derrotar o Grannus, o que acha? [2] Você tem razão vamos procurar esse Hipogrifo!", TimeUnit.MILLISECONDS, temp_dialog);
 												System.out.println("\n");
 												resp28 = entrada.nextInt();
 												
@@ -1344,7 +1344,7 @@ class Jogo {
 													
 											int resp29;
 											do {
-												Digita("\n\n - " + nome_aventureiro + " [1] Fazer reverência [2] Montar no Hipogrifo", TimeUnit.MILLISECONDS, temp_dialog);
+												Digita("\n\n - " + nome_aventureiro + ": [1] Fazer reverência [2] Montar no Hipogrifo", TimeUnit.MILLISECONDS, temp_dialog);
 												System.out.println("\n");
 												resp29 = entrada.nextInt();
 										
@@ -1367,7 +1367,7 @@ class Jogo {
 													
 													int resp30;
 													do {
-														Digita("\n\n - " + nome_aventureiro + " [1] Acho que devíamos acampar a noite e nos preparar para luta.[2] Vamos direto ao Grannus não quero que ele escape!", TimeUnit.MILLISECONDS, temp_dialog);
+														Digita("\n\n - " + nome_aventureiro + ": [1] Acho que devíamos acampar a noite e nos preparar para luta.[2] Vamos direto ao Grannus não quero que ele escape!", TimeUnit.MILLISECONDS, temp_dialog);
 														System.out.println("\n");
 														resp30 = entrada.nextInt();	
 														
@@ -1389,7 +1389,7 @@ class Jogo {
 														
 														int resp31;
 														do {
-															Digita("\n\n - " + nome_aventureiro + " [1]	Não é à toa que eles tem tantas joias [2] Acho que consigo ver o Reino da Morte no horizonte!",TimeUnit.MILLISECONDS, temp_dialog);	
+															Digita("\n\n - " + nome_aventureiro + ": [1] Não é à toa que eles tem tantas joias [2] Acho que consigo ver o Reino da Morte no horizonte!",TimeUnit.MILLISECONDS, temp_dialog);	
 															System.out.println("\n");
 															resp31 = entrada.nextInt();	
 															
@@ -1412,7 +1412,7 @@ class Jogo {
 														
 														int resp32;
 														do {
-															Digita("\n\n - " + nome_aventureiro + " [1] Espero que não seja mais uma das suas brilhantes ideias [2] Nós vamos passar bastante tempo juntos ainda, quer me falar isso agora?" , TimeUnit.MILLISECONDS, temp_dialog); 
+															Digita("\n\n - " + nome_aventureiro + ": [1] Espero que não seja mais uma das suas brilhantes ideias [2] Nós vamos passar bastante tempo juntos ainda, quer me falar isso agora?" , TimeUnit.MILLISECONDS, temp_dialog); 
 															System.out.println("\n"); 
 															resp32 = entrada.nextInt();
 															
@@ -1434,7 +1434,7 @@ class Jogo {
 														
 														int resp33;
 														do {
-															Digita("\n\n - " + nome_aventureiro + " [1]	Eu não esperava por isso, eu confio em você Doodou vamos voltar juntos para casa! [2] Entendido, eu vou matá-lo custe o que custar!",TimeUnit.MILLISECONDS, temp_dialog);	
+															Digita("\n\n - " + nome_aventureiro + ": [1] Eu não esperava por isso, eu confio em você Doodou vamos voltar juntos para casa! [2] Entendido, eu vou matá-lo custe o que custar!",TimeUnit.MILLISECONDS, temp_dialog);	
 															System.out.println("\n"); 
 															resp33 = entrada.nextInt();
 															
@@ -1470,7 +1470,7 @@ class Jogo {
 
 		int resp;
 		do {
-			Digita("\n\n - " + nome_aventureiro + " [1] Vamos, estou pronto!! [2] Esperaaaaa, eu estou cansado!!",
+			Digita("\n\n - " + nome_aventureiro + ": [1] Vamos, estou pronto!! [2] Esperaaaaa, eu estou cansado!!",
 					TimeUnit.MILLISECONDS, temp_dialog);
 
 			System.out.println("\n");
@@ -1502,7 +1502,7 @@ class Jogo {
 		int resp1;
 		do {
 			Digita("\n\n - " + nome_aventureiro
-					+ " [1] Ele deve ser muito convencido mesmo. [2] Isso pode ser uma armadilha!",
+					+ ": [1] Ele deve ser muito convencido mesmo. [2] Isso pode ser uma armadilha!",
 					TimeUnit.MILLISECONDS, temp_dialog);
 
 			System.out.println("\n");
@@ -1546,7 +1546,7 @@ class Jogo {
 
 		do {
 			Digita("\n\n - " + nome_aventureiro
-					+ " [1] Você foi covarde matando meu pai enquanto ele estava fraco! [2] Você vai pagar por tudo que fez cretino!",
+					+ ": [1] Você foi covarde matando meu pai enquanto ele estava fraco! [2] Você vai pagar por tudo que fez cretino!",
 					TimeUnit.MILLISECONDS, temp_dialog);
 
 			System.out.println("\n");
@@ -1575,7 +1575,7 @@ class Jogo {
 
 		do {
 			Digita("\n\n - " + nome_aventureiro
-					+ " [1] Então se lembra de mim sabe porque eu estou aqui! [2] Eu vim acabar com a maldição que você jogou na minha irmã!",
+					+ ": [1] Então se lembra de mim sabe porque eu estou aqui! [2] Eu vim acabar com a maldição que você jogou na minha irmã!",
 					TimeUnit.MILLISECONDS, temp_dialog);
 
 			System.out.println("\n");
@@ -1604,7 +1604,7 @@ class Jogo {
 
 		do {
 			Digita("\n\n - " + nome_aventureiro
-					+ " [1] Eu vou vencê-lo custe o que custar! [2] Doodou o que vamos fazer?", TimeUnit.MILLISECONDS,
+					+ ": [1] Eu vou vencê-lo custe o que custar! [2] Doodou o que vamos fazer?", TimeUnit.MILLISECONDS,
 					temp_dialog);
 
 			System.out.println("\n");
@@ -1632,7 +1632,7 @@ class Jogo {
 
 		int resp5;
 		do {
-			Digita("\n\n - " + nome_aventureiro + " [1] Atacar com a espada. [2] Esperar o ataque de Grannus.",
+			Digita("\n\n - " + nome_aventureiro + ": [1] Atacar com a espada. [2] Esperar o ataque de Grannus.",
 					TimeUnit.MILLISECONDS, temp_dialog);
 
 			System.out.println("\n");
@@ -1669,7 +1669,7 @@ class Jogo {
 
 		do {
 			Digita("\n\n - " + nome_aventureiro
-					+ " [1] Você devia se arrepender enquanto pode! [2] Eu não vou errar dessa vez!",
+					+ ": [1] Você devia se arrepender enquanto pode! [2] Eu não vou errar dessa vez!",
 					TimeUnit.MILLISECONDS, temp_dialog);
 
 			System.out.println("\n");
@@ -1701,7 +1701,7 @@ class Jogo {
 
 		do {
 			Digita("\n\n - " + nome_aventureiro
-					+ " [1] AAAAH EU VOU ACABAR COM A VIDA DELE!!!!!! [2] Como vamos ajudá-lo?", TimeUnit.MILLISECONDS,
+					+ ": [1] AAAAH EU VOU ACABAR COM A VIDA DELE!!!!!! [2] Como vamos ajudá-lo?", TimeUnit.MILLISECONDS,
 					temp_dialog);
 
 			System.out.println("\n");
@@ -1716,7 +1716,7 @@ class Jogo {
 				int resp8;
 
 				Digita("\n\n - " + nome_aventureiro
-						+ " [1] Você tem razão, precisamos dele vivo! [2] Você tem algum plano?", TimeUnit.MILLISECONDS,
+						+ ": [1] Você tem razão, precisamos dele vivo! [2] Você tem algum plano?", TimeUnit.MILLISECONDS,
 						temp_dialog);
 				System.out.println("\n");
 				resp8 = entrada.nextInt();
@@ -1860,7 +1860,7 @@ class Jogo {
 		int resp;
 
 		do {
-			Digita("\n\n - " + nome_aventureiro + " [1] Doodou, isso vai dar certo? [2] Ele pode morrer?",
+			Digita("\n\n - " + nome_aventureiro + ": [1] Doodou, isso vai dar certo? [2] Ele pode morrer?",
 					TimeUnit.MILLISECONDS, temp_dialog);
 
 			System.out.println("\n");
@@ -1891,7 +1891,7 @@ class Jogo {
 
 		do {
 			Digita("\n\n - " + nome_aventureiro
-					+ " [1] Grannus olhe pra mim, você sabe quem sou? [2] Eu acho que isso ainda não acabou!",
+					+ ": [1] Grannus olhe pra mim, você sabe quem sou? [2] Eu acho que isso ainda não acabou!",
 					TimeUnit.MILLISECONDS, temp_dialog);
 
 			System.out.println("\n");
@@ -1923,7 +1923,7 @@ class Jogo {
 
 		do {
 			Digita("\n\n - " + nome_aventureiro
-					+ " [1] Vamos te contar tudo que precisa saber! [2] Você realmente não se lembra de nada?",
+					+ ": [1] Vamos te contar tudo que precisa saber! [2] Você realmente não se lembra de nada?",
 					TimeUnit.MILLISECONDS, temp_dialog);
 
 			System.out.println("\n");
@@ -1951,7 +1951,7 @@ class Jogo {
 
 		do {
 			Digita("\n\n - " + nome_aventureiro
-					+ " [1] Vamos levá-lo pra casa, ainda precisamos da ajuda dele! [2] Doodou você acredita nele?",
+					+ ": [1] Vamos levá-lo pra casa, ainda precisamos da ajuda dele! [2] Doodou você acredita nele?",
 					TimeUnit.MILLISECONDS, temp_dialog);
 
 			System.out.println("\n");
@@ -1979,7 +1979,7 @@ class Jogo {
 
 		do {
 			Digita("\n\n - " + nome_aventureiro
-					+ " [1] Amarrar Grannus e levá-lo embora. [2] Dizer o que ele precisa saber.",
+					+ ": [1] Amarrar Grannus e levá-lo embora. [2] Dizer o que ele precisa saber.",
 					TimeUnit.MILLISECONDS, temp_dialog);
 
 			System.out.println("\n");
@@ -2017,7 +2017,7 @@ class Jogo {
 
 		do {
 			Digita("\n\n - " + nome_aventureiro
-					+ " [1] Lá vem você com suas ideias rsrs. [2] HAHAHA ele vai adorar isso!!", TimeUnit.MILLISECONDS,
+					+ ": [1] Lá vem você com suas ideias rsrs. [2] HAHAHA ele vai adorar isso!!", TimeUnit.MILLISECONDS,
 					temp_dialog);
 
 			System.out.println("\n");
@@ -2125,6 +2125,10 @@ class Jogo {
 			System.out.println("Você acertou com " + contador + " tentativa!");
 		} else {
 			System.err.println("Você errou 3 vezes seguidas!");
+			Digita("\n\n - " + nome_aventureiro
+					+ ": Acho que vamos pela sorte mesmo rs Vamos em direção a montanha!",
+					TimeUnit.MILLISECONDS, temp_dialog);
+			
 		}
 
 		Digita("\n\n - " + nome_aventureiro
@@ -2137,7 +2141,7 @@ class Jogo {
 
 		do {
 			Digita("\n\n - " + nome_aventureiro
-					+ " [1] Fique tranquilo, te explicaremos tudo no caminho! [2] Chamar Hipogrifo.",
+					+ ": [1] Fique tranquilo, te explicaremos tudo no caminho! [2] Chamar Hipogrifo.",
 					TimeUnit.MILLISECONDS, temp_dialog);
 
 			System.out.println("\n");
@@ -2177,7 +2181,7 @@ class Jogo {
 
 		do {
 			Digita("\n\n - " + nome_aventureiro
-					+ " [1] Você vai poder se desculpar quando salvar a minha irmã! [2] Se não salvarmos ela hoje, ela morrerá à meia noite.",
+					+ ": [1] Você vai poder se desculpar quando salvar a minha irmã! [2] Se não salvarmos ela hoje, ela morrerá à meia noite.",
 					TimeUnit.MILLISECONDS, temp_dialog);
 
 			System.out.println("\n");
@@ -2203,7 +2207,7 @@ class Jogo {
 		int resp8;
 
 		do {
-			Digita("\n\n - " + nome_aventureiro + " [1] Chamar Solveing [2] Entrar na casa", TimeUnit.MILLISECONDS,
+			Digita("\n\n - " + nome_aventureiro + ": [1] Chamar Solveing [2] Entrar na casa", TimeUnit.MILLISECONDS,
 					temp_dialog);
 
 			System.out.println("\n");
@@ -2247,7 +2251,7 @@ class Jogo {
 
 		do {
 			Digita("\n\n - " + nome_aventureiro
-					+ " [1] Como está nossa irmã? [2] Vamos logo com isso, estamos perdendo tempo!",
+					+ ": [1] Como está nossa irmã? [2] Vamos logo com isso, estamos perdendo tempo!",
 					TimeUnit.MILLISECONDS, temp_dialog);
 
 			System.out.println("\n");
@@ -2276,7 +2280,7 @@ class Jogo {
 
 		do {
 			Digita("\n\n - " + nome_aventureiro
-					+ " [1] Pedir para Solveing revelar o que encontrou. [2] Ter uma conversa a sós com Solveing.",
+					+ ": [1] Pedir para Solveing revelar o que encontrou. [2] Ter uma conversa a sós com Solveing.",
 					TimeUnit.MILLISECONDS, temp_dialog);
 
 			System.out.println("\n");
@@ -2296,7 +2300,7 @@ class Jogo {
 				int resp11;
 
 				Digita("\n\n - " + nome_aventureiro
-						+ " [1] Você não precisa fazer isso! [2] Eu sei que você sempre foi fiel ao meu pai, faça o que for preciso!",
+						+ ": [1] Você não precisa fazer isso! [2] Eu sei que você sempre foi fiel ao meu pai, faça o que for preciso!",
 						TimeUnit.MILLISECONDS, temp_dialog);
 				System.out.println("\n");
 				resp11 = entrada.nextInt();
@@ -2379,7 +2383,7 @@ class Jogo {
 			int resp12;
 
 			Digita("\n\n - " + nome_aventureiro
-					+ " [1] Solveig, nosso pai nos ensinou a nunca ser covarde! [2] Vamos entrar e contar isso a ele.",
+					+ ": [1] Solveig, nosso pai nos ensinou a nunca ser covarde! [2] Vamos entrar e contar isso a ele.",
 					TimeUnit.MILLISECONDS, temp_dialog);
 			System.out.println("\n");
 			resp12 = entrada.nextInt();
@@ -2403,7 +2407,7 @@ class Jogo {
 				int resp13;
 
 				Digita("\n\n - " + nome_aventureiro
-						+ " [1] Você não precisa fazer isso! [2] Eu sei que você sempre foi fiel ao meu pai, faça o que for preciso!",
+						+ ": [1] Você não precisa fazer isso! [2] Eu sei que você sempre foi fiel ao meu pai, faça o que for preciso!",
 						TimeUnit.MILLISECONDS, temp_dialog);
 				System.out.println("\n");
 				resp13 = entrada.nextInt();
@@ -2487,7 +2491,7 @@ class Jogo {
 				int resp14;
 
 				Digita("\n\n - " + nome_aventureiro
-						+ " [1] Você não precisa fazer isso! [2] Eu sei que você sempre foi fiel ao meu pai, faça o que for preciso!",
+						+ ": [1] Você não precisa fazer isso! [2] Eu sei que você sempre foi fiel ao meu pai, faça o que for preciso!",
 						TimeUnit.MILLISECONDS, temp_dialog);
 				System.out.println("\n");
 				resp14 = entrada.nextInt();
@@ -2560,7 +2564,7 @@ class Jogo {
 		int resp15;
 
 		do {
-			Digita("\n\n - " + nome_aventureiro + " [1] Você falou com ela? [2] Está pronto? ", TimeUnit.MILLISECONDS,
+			Digita("\n\n - " + nome_aventureiro + ": [1] Você falou com ela? [2] Está pronto? ", TimeUnit.MILLISECONDS,
 					temp_dialog);
 
 			System.out.println("\n");
@@ -2585,7 +2589,7 @@ class Jogo {
 
 		do {
 			Digita("\n\n - " + nome_aventureiro
-					+ " [1] Tem alguma coisa que posso fazer por você? [2] Você pensou em como vai fazer isso? ",
+					+ ": [1] Tem alguma coisa que posso fazer por você? [2] Você pensou em como vai fazer isso? ",
 					TimeUnit.MILLISECONDS, temp_dialog);
 
 			System.out.println("\n");
@@ -2621,7 +2625,7 @@ class Jogo {
 
 		do {
 			Digita("\n\n - " + nome_aventureiro
-					+ " [1] Você foi um grande herói Grannus, sempre lembraremos disso! [2] Meu pai espera por você! Adeus! ",
+					+ ": [1] Você foi um grande herói Grannus, sempre lembraremos disso! [2] Meu pai espera por você! Adeus! ",
 					TimeUnit.MILLISECONDS, temp_dialog);
 
 			System.out.println("\n");
@@ -2736,7 +2740,7 @@ class Jogo {
 		int resp3;
 
 		do {
-			Digita("\n\n [1] Vamos embora, no caminho eu te explico! [2] Você machucou muita gente, quer dizer, a magia que estava dentro de você!",
+			Digita("\n\n - " + nome_aventureiro + ": [1] Vamos embora, no caminho eu te explico! [2] Você machucou muita gente, quer dizer, a magia que estava dentro de você!",
 					TimeUnit.MILLISECONDS, temp_dialog);
 
 			System.out.println("\n");
@@ -2745,7 +2749,7 @@ class Jogo {
 			if (resp3 == 1) {
 				Digita("\n\n  Grannus: Vamos!!", TimeUnit.MILLISECONDS, temp_dialog);
 				Digita("\n\n - " + nome_aventureiro
-						+ " “: Aconteceu diversas coisas desde que a magia entrou em seu corpo, você matou o mestre e antes de ir embora amaldiçoou a Bryanna com um feitiço maligno que está destruindo-a por dentro e fora,"
+						+ ": Aconteceu diversas coisas desde que a magia entrou em seu corpo, você matou o mestre e antes de ir embora amaldiçoou a Bryanna com um feitiço maligno que está destruindo-a por dentro e fora,"
 						+ " achamos que você não estava mais vivo, porém com vários acontecimentos soubemos da sua existência e por isso viemos atrás de você, nós achamos que a única forma de salvar a Bryanna é você refazer o feitiço que a assola noite e dia!",
 						TimeUnit.MILLISECONDS, temp_dialog);
 				Digita("\n\n  Grannus:  Como assim feitiço, como eu fiz isso? Como eu vou desfazê-lo?",
@@ -2889,6 +2893,9 @@ class Jogo {
 			System.out.println("Você acertou com " + contador + " tentativa!");
 		} else {
 			System.err.println("Você errou 3 vezes seguidas!");
+			Digita("\n\n - " + nome_aventureiro
+					+ ": Acho que vamos pela sorte mesmo rs Vamos em direção a montanha!",
+					TimeUnit.MILLISECONDS, temp_dialog);
 		}
 
 		int resp5 = 0;
@@ -2997,7 +3004,7 @@ class Jogo {
 
 		do {
 			Digita("\n\n - " + nome_aventureiro
-					+ " [1] Como está nossa irmã? [2] Vamos logo com isso, estamos perdendo tempo!",
+					+ ": [1] Como está nossa irmã? [2] Vamos logo com isso, estamos perdendo tempo!",
 					TimeUnit.MILLISECONDS, temp_dialog);
 			System.out.println("\n");
 
@@ -3010,7 +3017,7 @@ class Jogo {
 					temp_dialog);
 
 			Digita("\n\n - " + nome_aventureiro
-					+ " [1] Pedir para Solveing revelar o que encontrou. [2] Ter uma conversa a sós com Solveing.",
+					+ ": [1] Pedir para Solveing revelar o que encontrou. [2] Ter uma conversa a sós com Solveing.",
 					TimeUnit.MILLISECONDS, temp_dialog);
 
 			System.out.println("\n");
@@ -3039,7 +3046,7 @@ class Jogo {
 
 			int resp7;
 			Digita("\n\n - " + nome_aventureiro
-					+ " [1] Você não precisa fazer isso! ou [2] Eu sei que você sempre foi fiel ao meu pai, faça o que for preciso! Vou conversar com meu irmão a sós!",
+					+ ": [1] Você não precisa fazer isso! ou [2] Eu sei que você sempre foi fiel ao meu pai, faça o que for preciso! Vou conversar com meu irmão a sós!",
 					TimeUnit.MILLISECONDS, temp_dialog);
 			System.out.println("\n");
 
@@ -3088,7 +3095,7 @@ class Jogo {
 		int resp8;
 		do {
 			Digita("\n\n - " + nome_aventureiro
-					+ " [1] Solveig, o pai nos ensinou a nunca ser covarde! [2] Vamos entrar e contar isso a ele.",
+					+ ": [1] Solveig, o pai nos ensinou a nunca ser covarde! [2] Vamos entrar e contar isso a ele.",
 					TimeUnit.MILLISECONDS, temp_dialog);
 			System.out.println("\n");
 
@@ -3122,7 +3129,7 @@ class Jogo {
 		int resp9;
 		do {
 			Digita("\n\n - " + nome_aventureiro
-					+ " [1] Você não precisa fazer isso! ou [2] Eu sei que você sempre foi fiel ao meu pai, faça o que for preciso!",
+					+ ": [1] Você não precisa fazer isso! ou [2] Eu sei que você sempre foi fiel ao meu pai, faça o que for preciso!",
 					TimeUnit.MILLISECONDS, temp_dialog);
 			System.out.println("\n");
 
@@ -3157,7 +3164,7 @@ class Jogo {
 
 		int resp10;
 		do {
-			Digita("\n\n - " + nome_aventureiro + " [1] Você falou com ela ? ou [2] Está pronto ?",
+			Digita("\n\n - " + nome_aventureiro + ": [1] Você falou com ela ? ou [2] Está pronto ?",
 					TimeUnit.MILLISECONDS, temp_dialog);
 			System.out.println("\n");
 
@@ -3183,7 +3190,7 @@ class Jogo {
 		int resp11;
 		do {
 			Digita("\n\n - " + nome_aventureiro
-					+ " [1] Tem alguma coisa que posso fazer por você ? ou [2] Você pensou em como vai fazer isso ?",
+					+ ": [1] Tem alguma coisa que posso fazer por você ? ou [2] Você pensou em como vai fazer isso ?",
 					TimeUnit.MILLISECONDS, temp_dialog);
 			System.out.println("\n");
 
@@ -3208,7 +3215,7 @@ class Jogo {
 		} while (resp11 != 1 || resp11 != 2);
 
 		Digita("\n\n - " + nome_aventureiro
-				+ " [1] Você foi um grande herói Grannus, sempre lembraremos disso! ou [2] Meu pai espera por você! Adeus!",
+				+ ": [1] Você foi um grande herói Grannus, sempre lembraremos disso! ou [2] Meu pai espera por você! Adeus!",
 				TimeUnit.MILLISECONDS, temp_dialog);
 		System.out.println("\n");
 
@@ -3224,7 +3231,7 @@ class Jogo {
 				TimeUnit.MILLISECONDS, temp_dialog);
 
 		Digita("\n\n  ...:::>>>FIM<<<:::...", TimeUnit.MILLISECONDS, temp_dialog);
-		// System.exit(0);
+		System.exit(0);
 	}
 
 //================================================================ FIM DO CÓDIGO ==============================================================================================================================	
