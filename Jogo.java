@@ -281,7 +281,7 @@ class Jogo {
 	}
 
 //================================================================ CAPITULO 2 ==============================================================================================================================
-	static void capitulo_2() throws Exception {
+	static int capitulo_2() throws Exception {
 
 		Scanner entrada = new Scanner(System.in);
 
@@ -581,11 +581,11 @@ class Jogo {
 					System.out.println("Resposta correta!");
 					acertou = true;
 					contador++;
-			
+
 				} else {
 					System.out.println("Resposta incorreta!");
 					contador++;
-		
+
 				}
 				break;
 			case "b":
@@ -595,11 +595,11 @@ class Jogo {
 					System.out.println("Resposta correta!");
 					acertou = true;
 					contador++;
-			
+
 				} else {
 					System.out.println("Resposta incorreta!");
 					contador++;
-				
+
 				}
 				break;
 			case "c":
@@ -609,11 +609,11 @@ class Jogo {
 					System.out.println("Resposta correta!");
 					acertou = true;
 					contador++;
-			
+
 				} else {
 					System.out.println("Resposta incorreta!");
 					contador++;
-					
+
 				}
 				break;
 			case "d":
@@ -623,12 +623,12 @@ class Jogo {
 					System.out.println("Resposta correta!");
 					acertou = true;
 					contador++;
-				
+
 				} else {
 					System.out.println("");
 					System.out.println("Resposta incorreta!");
 					contador++;
-					
+
 				}
 				break;
 			case "e":
@@ -638,11 +638,11 @@ class Jogo {
 					System.out.println("Resposta correta!");
 					acertou = true;
 					contador++;
-					
+
 				} else {
 					System.out.println("Resposta incorreta!");
 					contador++;
-					
+
 				}
 				break;
 			default:
@@ -902,11 +902,11 @@ class Jogo {
 					System.out.println("Resposta correta!");
 					acertou1 = true;
 					contador1++;
-					
+
 				} else {
 					System.out.println("Resposta incorreta!");
 					contador1++;
-					
+
 				}
 				break;
 			case "b":
@@ -916,11 +916,11 @@ class Jogo {
 					System.out.println("Resposta correta!");
 					acertou1 = true;
 					contador1++;
-					
+
 				} else {
 					System.out.println("Resposta incorreta!");
 					contador1++;
-					
+
 				}
 				break;
 			case "c":
@@ -930,11 +930,11 @@ class Jogo {
 					System.out.println("Resposta correta!");
 					acertou1 = true;
 					contador1++;
-					
+
 				} else {
 					System.out.println("Resposta incorreta!");
 					contador1++;
-					
+
 				}
 				break;
 			case "d":
@@ -944,11 +944,11 @@ class Jogo {
 					System.out.println("Resposta correta!");
 					acertou1 = true;
 					contador1++;
-				
+
 				} else {
 					System.out.println("Resposta incorreta!");
 					contador1++;
-				
+
 				}
 				break;
 			case "e":
@@ -958,11 +958,11 @@ class Jogo {
 					System.out.println("Resposta correta!");
 					acertou1 = true;
 					contador1++;
-					
+
 				} else {
 					System.out.println("Resposta incorreta!");
 					contador1++;
-				  
+
 				}
 				break;
 			default:
@@ -975,19 +975,20 @@ class Jogo {
 			Digita("\n\n - Doodou: Ótimo " + nome_aventureiro
 					+ " você acertou! gire a corrente para o número 0 e depois volte para o -3 para liberar a trava!",
 					TimeUnit.MILLISECONDS, temp_transicao);
-		numTentativas = 3;
+			numTentativas = 3;
 
 		} else {
-			System.err.println("Você errou "  + contador1 + " vezes seguidas!");
-			Digita("\n\n - Doodou: Ei, espera aí! Acabei de lembrar que tenho algo aqui na mochila que vai resolver isso!!",
-					TimeUnit.MILLISECONDS, temp_transicao);
-			Digita("\n\n - Doodou: Isso é uma poção que seu pai me ensinou! Ela irá derreter a corrente e libertá-lo dessa prisão.",
-					TimeUnit.MILLISECONDS, temp_transicao);
+			System.err.println("Você errou " + contador1 + " vezes seguidas!");
 			numTentativas = numTentativas - 1;
-			if(numTentativas == 0) {
-				Digita("\n\n GAME OVER!!",
-						TimeUnit.MILLISECONDS, temp_transicao);
+
+			if (numTentativas == 0) {
+				Digita("\n\n GAME OVER!!", TimeUnit.MILLISECONDS, temp_transicao);
 				System.exit(0);
+			} else {
+				Digita("\n\n - Doodou: Ei, espera aí! Acabei de lembrar que tenho algo aqui na mochila que vai resolver isso!!",
+						TimeUnit.MILLISECONDS, temp_transicao);
+				Digita("\n\n - Doodou: Isso é uma poção que seu pai me ensinou! Ela irá derreter a corrente e libertá-lo dessa prisão.",
+						TimeUnit.MILLISECONDS, temp_transicao);
 			}
 		}
 
@@ -1066,8 +1067,8 @@ class Jogo {
 		do {
 
 			Digita("\n\n - " + nome_aventureiro
-					+ ": [1] Vamos com cuidado, não confio neles! ou [2] Melhor já pegar a espada!", TimeUnit.MILLISECONDS,
-					temp_transicao);
+					+ ": [1] Vamos com cuidado, não confio neles! ou [2] Melhor já pegar a espada!",
+					TimeUnit.MILLISECONDS, temp_transicao);
 			System.out.println("\n");
 			resp18 = entrada.nextInt();
 
@@ -1246,11 +1247,11 @@ class Jogo {
 					System.out.println("Resposta correta!");
 					acertou2 = true;
 					contador2++;
-				
+
 				} else {
 					System.out.println("Resposta incorreta!");
 					contador2++;
-					
+
 				}
 				break;
 			case "b":
@@ -1259,11 +1260,11 @@ class Jogo {
 					System.out.println("Resposta correta!");
 					acertou2 = true;
 					contador2++;
-					
+
 				} else {
 					System.out.println("Resposta incorreta!");
 					contador2++;
-					
+
 				}
 				break;
 			case "c":
@@ -1272,11 +1273,11 @@ class Jogo {
 					System.out.println("Resposta correta!");
 					acertou2 = true;
 					contador2++;
-					
+
 				} else {
 					System.out.println("Resposta incorreta!");
 					contador2++;
-					
+
 				}
 				break;
 			case "d":
@@ -1285,11 +1286,11 @@ class Jogo {
 					System.out.println("Resposta correta!");
 					acertou2 = true;
 					contador2++;
-					
+
 				} else {
 					System.out.println("Resposta incorreta!");
 					contador2++;
-					
+
 				}
 				break;
 			case "e":
@@ -1298,11 +1299,11 @@ class Jogo {
 					System.out.println("Resposta correta!");
 					acertou2 = true;
 					contador2++;
-					
+
 				} else {
 					System.out.println("Resposta incorreta!");
 					contador2++;
-					
+
 				}
 				break;
 			default:
@@ -1316,9 +1317,8 @@ class Jogo {
 		} else {
 			System.err.println("Você errou " + contador2 + " vezes seguidas!");
 			numTentativas = numTentativas - 1;
-			if(numTentativas == 0) {
-				Digita("\n\n GAME OVER!!",
-						TimeUnit.MILLISECONDS, temp_transicao);
+			if (numTentativas == 0) {
+				Digita("\n\n\n GAME OVER!!!", TimeUnit.MILLISECONDS, temp_transicao);
 				System.exit(0);
 			} else {
 				Digita("\n\n - Doodou: Parece ser mais facíl do que isso! Eu tenho uma chave mestra comigo, use-a!! ",
@@ -1656,18 +1656,17 @@ class Jogo {
 				TimeUnit.MILLISECONDS, temp_dialog);
 
 		capitulo_3(numTentativas);
-
+		return numTentativas;
 	}
 
 //================================================================ CAPITULO 3 ==============================================================================================================================
-	static void capitulo_3(int numTentativas) throws Exception {
+	static int capitulo_3(int numTentativas) throws Exception {
 
 		Scanner entrada = new Scanner(System.in);
 		int numTentativas1 = numTentativas;
 
 		Digita("\n\n  CAPÍTULO FINAL - O segredo é revelado", TimeUnit.MILLISECONDS, temp_dialog);
-		Digita("\n\n..:: 4º Dia da Jornada ::.. ", 
-				TimeUnit.MILLISECONDS, temp_transicao);
+		Digita("\n\n..:: 4º Dia da Jornada ::.. ", TimeUnit.MILLISECONDS, temp_transicao);
 		Digita("\n\n - Doodou: Acorde garoto, precisamos seguir em frente! Vamos descobrir como salvar sua irmã e acabar com tudo isso.",
 				TimeUnit.MILLISECONDS, temp_dialog);
 
@@ -1807,8 +1806,8 @@ class Jogo {
 
 		do {
 			Digita("\n\n - " + nome_aventureiro
-					+ ": [1] Eu vou vencê-lo custe o que custar! ou [2] Doodou o que vamos fazer?", TimeUnit.MILLISECONDS,
-					temp_dialog);
+					+ ": [1] Eu vou vencê-lo custe o que custar! ou [2] Doodou o que vamos fazer?",
+					TimeUnit.MILLISECONDS, temp_dialog);
 
 			System.out.println("\n");
 			resp4 = entrada.nextInt();
@@ -1904,8 +1903,8 @@ class Jogo {
 
 		do {
 			Digita("\n\n - " + nome_aventureiro
-					+ ": [1] AAAAH EU VOU ACABAR COM A VIDA DELE!!!!!! ou [2] Como vamos ajudá-lo?", TimeUnit.MILLISECONDS,
-					temp_dialog);
+					+ ": [1] AAAAH EU VOU ACABAR COM A VIDA DELE!!!!!! ou [2] Como vamos ajudá-lo?",
+					TimeUnit.MILLISECONDS, temp_dialog);
 
 			System.out.println("\n");
 			resp7 = entrada.nextInt();
@@ -1954,12 +1953,12 @@ class Jogo {
 
 		Digita("\n\n  Doodou: Distraia ele " + nome_aventureiro + ", vou tentar usar algo pelas costas dele!",
 				TimeUnit.MILLISECONDS, temp_dialog);
-		Digita("\n\n - " + nome_aventureiro + ": GRANUUS, VENHA ME PEGAR ESTOU AQUI!!! BUUH", TimeUnit.MILLISECONDS,
+		Digita("\n\n - " + nome_aventureiro + ": GRANUUS, VENHA ME PEGAR ESTOU AQUI!!! BUUH!!", TimeUnit.MILLISECONDS,
 				temp_dialog);
 		Digita("\n\n  Doodou:  É agora " + nome_aventureiro + " você vai precisa me ajudar!", TimeUnit.MILLISECONDS,
 				temp_dialog);
-		Digita("\n\n  Doodou: CORPUUUSS RETIREEEE!!!", TimeUnit.MILLISECONDS, temp_dialog);
-		Digita("\n\n  Grannus: AAAAAAAAAHHH", TimeUnit.MILLISECONDS, temp_dialog);
+		Digita("\n\n  Doodou: CORPUUUSS RETIREEEE!!!!", TimeUnit.MILLISECONDS, temp_dialog);
+		Digita("\n\n  Grannus: AAAAAAAAAHHH!!!!", TimeUnit.MILLISECONDS, temp_dialog);
 
 		boolean acertou = false;
 		int contador = 0;
@@ -2047,11 +2046,15 @@ class Jogo {
 			final_1(numTentativas1);
 			numTentativas1 = 3;
 		} else {
-			System.err.println("Você errou 3 vezes seguidas!");
-			final_2(numTentativas);
+			System.err.println("Você errou " + numTentativas1 + " vezes seguidas!");
 			numTentativas1 = numTentativas1 - 1;
+			if (numTentativas1 == 0) {
+				Digita("\n\n\n GAME OVER!!!", TimeUnit.MILLISECONDS, temp_transicao);
+				System.exit(0);
+			}
+			final_2(numTentativas1);
 		}
-
+		return numTentativas1;
 	}
 
 //================================================================ Final 1 ==============================================================================================================================	
@@ -2059,6 +2062,7 @@ class Jogo {
 	static void final_1(int numTentativas1) throws Exception {
 		Scanner entrada = new Scanner(System.in);
 		int numTentativas = numTentativas1;
+
 		Digita("\n\n  Doodou: Boaaa " + nome_aventureiro + "! Agora, segure ele até o feitiço fazer efeito!",
 				TimeUnit.MILLISECONDS, temp_dialog);
 
@@ -2222,8 +2226,8 @@ class Jogo {
 
 		do {
 			Digita("\n\n - " + nome_aventureiro
-					+ ": [1] Lá vem você com suas ideias rsrs. ou [2] HAHAHA ele vai adorar isso!!", TimeUnit.MILLISECONDS,
-					temp_dialog);
+					+ ": [1] Lá vem você com suas ideias rsrs. ou [2] HAHAHA ele vai adorar isso!!",
+					TimeUnit.MILLISECONDS, temp_dialog);
 
 			System.out.println("\n");
 			resp5 = entrada.nextInt();
@@ -2324,15 +2328,22 @@ class Jogo {
 			default:
 				System.out.println("Escolha inválida!");
 			}
-		} while (!acertou & contador < 3);
+		} while (!acertou & contador < numTentativas);
 
 		if (acertou) {
 			System.out.println("Você acertou com " + contador + " tentativa!");
+			numTentativas = 3;
 		} else {
-			System.err.println("Você errou 3 vezes seguidas!");
-			Digita("\n\n - " + nome_aventureiro + ": Acho que vamos pela sorte mesmo rs Vamos em direção a montanha!",
-					TimeUnit.MILLISECONDS, temp_dialog);
-
+			System.err.println("Você errou " + numTentativas + " vezes seguidas!");
+			numTentativas = numTentativas - 1;
+			if (numTentativas == 0) {
+				Digita("\n\n\n GAME OVER!!!", TimeUnit.MILLISECONDS, temp_transicao);
+				System.exit(0);
+			} else {
+				Digita("\n\n - " + nome_aventureiro
+						+ ": Acho que vamos pela sorte mesmo rs. Vamos em direção a montanha!", TimeUnit.MILLISECONDS,
+						temp_dialog);
+			}
 		}
 
 		Digita("\n\n - " + nome_aventureiro
@@ -2371,8 +2382,7 @@ class Jogo {
 		Digita("\n\n  Doodou: Vamos lá subam!", TimeUnit.MILLISECONDS, temp_dialog);
 		Digita("\n\n\n  Enquanto o forte Hipogrifo leva-os para casa, Doodou e " + nome_aventureiro
 				+ " contam tudo que Grannus precisava saber.", TimeUnit.MILLISECONDS, temp_dialog);
-		Digita("\n\n\n..:: 5º Dia da Jornada ::.. ", 
-				TimeUnit.MILLISECONDS, temp_transicao);
+		Digita("\n\n\n..:: 5º Dia da Jornada ::.. ", TimeUnit.MILLISECONDS, temp_transicao);
 		Digita("\n\n\n  Doodou: Olhem... estamos chegando!!!", TimeUnit.MILLISECONDS, temp_dialog);
 		Digita("\n\n - " + nome_aventureiro
 				+ ": [...] então Grannus resumindo nós precisamos que você liberte minha irmã da maldição que você lançou nela, meu irmão Solveig está com ela agora tentando encontrar um jeito de libertá-la.",
@@ -2770,8 +2780,8 @@ class Jogo {
 		int resp15;
 
 		do {
-			Digita("\n\n - " + nome_aventureiro + ": [1] Você falou com ela? ou [2] Está pronto? ", TimeUnit.MILLISECONDS,
-					temp_dialog);
+			Digita("\n\n - " + nome_aventureiro + ": [1] Você falou com ela? ou [2] Está pronto? ",
+					TimeUnit.MILLISECONDS, temp_dialog);
 
 			System.out.println("\n");
 			resp15 = entrada.nextInt();
@@ -3094,13 +3104,19 @@ class Jogo {
 			default:
 				System.out.println("Escolha inválida!");
 			}
-		} while (!acertou & contador < 3);
+		} while (!acertou & contador < numTentativas);
 
 		if (acertou) {
 			System.out.println("Você acertou com " + contador + " tentativa!");
+			numTentativas = 3;
 		} else {
-			System.err.println("Você errou 3 vezes seguidas!");
-			Digita("\n\n - " + nome_aventureiro + ": Acho que vamos pela sorte mesmo rs Vamos em direção a montanha!",
+			System.err.println("Você errou " + numTentativas + " vezes seguidas!");
+			numTentativas1 = numTentativas1 - 1;
+			if (numTentativas1 == 0) {
+				Digita("\n\n\n GAME OVER!!!", TimeUnit.MILLISECONDS, temp_transicao);
+				System.exit(0);
+			}
+			Digita("\n\n - " + nome_aventureiro + ": Acho que vamos pela sorte mesmo rs. Vamos em direção a montanha!",
 					TimeUnit.MILLISECONDS, temp_dialog);
 		}
 
@@ -3120,8 +3136,7 @@ class Jogo {
 					+ " [...] então Grannus resumindo nós precisamos que você liberte minha irmã da maldição que você lançou nela, "
 					+ "meu irmão Solveig está com ela agora tentando encontrar um jeito de libertá-la.",
 					TimeUnit.MILLISECONDS, temp_dialog);
-			Digita("\n\n\n..:: 5º Dia da Jornada ::.. ", 
-					TimeUnit.MILLISECONDS, temp_transicao);
+			Digita("\n\n\n..:: 5º Dia da Jornada ::.. ", TimeUnit.MILLISECONDS, temp_transicao);
 			Digita("\n\n\n  Grannus: Meu deus… eu não consigo acreditar que fiz isso! Eu cuidei daquela menina como uma irmã!",
 					TimeUnit.MILLISECONDS, temp_dialog);
 			Digita("\n\n - " + nome_aventureiro + ": Não se culpe meu amigo, nós sabemos como Centrion era poderoso!",
@@ -3427,7 +3442,7 @@ class Jogo {
 				TimeUnit.MILLISECONDS, temp_dialog);
 		System.out.println("\n");
 
-		Digita("\n\n Grannus: Accipit profunda spirituuuuus!", TimeUnit.MILLISECONDS, temp_dialog);
+		Digita("\n\n Grannus: Accipit profunda spirituuuuus!!", TimeUnit.MILLISECONDS, temp_dialog);
 
 		Digita("\n\n Grannus se afasta da casa e enfia seu próprio cajado em seu peito, o tempo escurece, o vento forte surge ao norte.",
 				TimeUnit.MILLISECONDS, temp_dialog);
